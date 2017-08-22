@@ -1,0 +1,23 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 117px">
+        <div class="col-lg-2 "><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="srv_own.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 36px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="create_Srv_own()" style="width: 100%;">save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 35px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="get_all_Srv_own()" style="width: 100%;">getall</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 43px">
+        <div class="col-lg-3 "><a routerLink="/home"><button class="btn btn-primary" style="width: 100%;">cancel</button></a>
+        </div>
+        </div>
+
+    </div>
+</section>

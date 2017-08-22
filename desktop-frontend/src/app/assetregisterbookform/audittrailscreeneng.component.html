@@ -1,0 +1,66 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 112px">
+        <div class="col-lg-2 "><label class="generated-label">Created By</label>
+        </div>
+        <div class="col-lg-3 "><md-select placeholder="Select" class="null" style="width: 100%;">
+        <md-option [value]="1">Value 1</md-option>
+        <md-option [value]="2">Value 2</md-option>
+        <md-option [value]="3">Value 3</md-option>
+        <md-option [value]="4">Value 4</md-option>
+
+        </md-select>
+        </div>
+        <div class="col-lg-1 "><label class="generated-label">CreatedOn</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.createdon"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 54px">
+        <div class="col-lg-2 "><label class="generated-label">Last modified By</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.lastmodifiedby"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Last Modified On</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.lastmodifiedon"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 42px">
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.oprn_grp"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 61px">
+        <div class="col-lg-3 "><label class="generated-label">Dispatch from kolkatta to</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.despatchfromkolkatato"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 50px">
+        <div class="col-lg-2 "><label class="generated-label">Dispatch Date</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.despatchdate"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 59px">
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.date1"></md-input-container>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.date2"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 97px">
+        <div class="col-lg-2 "><button class="btn btn-primary" (click)="create_Assetregisterbookform()" style="width: 100%;">save</button>
+        </div>
+        <div class="col-lg-2 "><a routerLink="/home"><button class="btn btn-primary" style="width: 100%;">cancel</button></a>
+        </div>
+        <div class="col-lg-2 "><button class="btn btn-primary" (click)="get_all_Assetregisterbookform()" style="width: 100%;">getall</button>
+        </div>
+        </div>
+
+    </div>
+</section>

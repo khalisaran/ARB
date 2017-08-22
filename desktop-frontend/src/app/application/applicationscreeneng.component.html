@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 145px">
+        <div class="col-lg-1 "><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="application.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 55px">
+        <div class="col-lg-2 "><label class="generated-label">Description</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="application.description"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 46px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="create_Application()" style="width: 100%;">Save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 52px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="get_all_Application()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+
+    </div>
+</section>

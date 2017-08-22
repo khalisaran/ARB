@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 133px">
+        <div class="col-lg-1 "><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="rentalplan.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 62px">
+        <div class="col-lg-1 "><label class="generated-label">Description</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="rentalplan.description"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 92px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="create_RentalPlan()" style="width: 100%;">Save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 51px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="get_all_RentalPlan()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+
+    </div>
+</section>

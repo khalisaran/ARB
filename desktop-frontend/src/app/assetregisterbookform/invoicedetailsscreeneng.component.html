@@ -1,0 +1,62 @@
+<section>
+    <div class="container">
+ <div class="row" style="padding-top: 32px">
+        
+        <div class="col-lg-4 "><label class="generated-label" style="color:blue">Invoice Details</label>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 79px">
+        <div class="col-lg-2 "><label class="generated-label">Invoice Date</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.invoicedate"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Billing Entity</label>
+        </div>
+        <div class="col-lg-3 ">
+            <md-select placeholder="Select" [(ngModel)]= 'assetregisterbookform.billingentity' *ngIf="billing_entity_list">
+                <md-option *ngFor="let bill of billing_entity_list" value="{{bill}}" >{{bill.billname}}</md-option>
+            </md-select>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 55px">
+        <div class="col-lg-2 "><label class="generated-label">Invoice Number</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.invoicenumber"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Currency</label>
+        </div>
+        <div class="col-lg-3 ">
+            <md-select placeholder="Select" [(ngModel)]= 'assetregisterbookform.inv_currency' *ngIf="currency_list">
+                <md-option *ngFor="let cur of currency_list" value="{{cur}}" >{{cur.currenyName}}</md-option>
+            </md-select>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 40px">
+        <div class="col-lg-2 "><label class="generated-label">Vendor Name</label>
+        </div>
+        <div class="col-lg-3 ">
+            <div class="col-lg-3 ">
+            <md-select placeholder="Select" [(ngModel)]= 'assetregisterbookform.vendorname' *ngIf="vendor_list">
+                <md-option *ngFor="let vendor of vendor_list" value="{{vendor}}" >{{vendor.vendorName}}</md-option>
+            </md-select>
+        </div>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Invoice Amount</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.invoiceamount"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 44px">
+        <div class="col-lg-3 "><label class="generated-label">Other Information (If any)</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.otherinformation"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Installation Date</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.installationdate"></md-input-container>
+        </div>
+        </div>
+    </div>
+</section>

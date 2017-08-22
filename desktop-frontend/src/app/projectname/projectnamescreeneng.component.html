@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 144px">
+        <div class="col-lg-1 "><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="projectname.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 75px">
+        <div class="col-lg-1 "><label class="generated-label">Description</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="projectname.description"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 58px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="create_ProjectName()" style="width: 100%;">save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 41px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="get_all_ProjectName()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+
+    </div>
+</section>

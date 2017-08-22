@@ -1,0 +1,23 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 110px">
+        <div class="col-lg-1 "><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="infra_own.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 44px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="create_Infra_own()" style="width: 100%;">save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 46px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="get_all_Infra_own()" style="width: 100%;">getall</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 39px">
+        <div class="col-lg-3 "><a routerLink="/home"><button class="btn btn-primary" style="width: 100%;">cancel</button></a>
+        </div>
+        </div>
+
+    </div>
+</section>

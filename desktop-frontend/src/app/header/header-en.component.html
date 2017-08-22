@@ -1,0 +1,121 @@
+<nav class="navbar navbar-inverse">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+    <a class="navbar-brand" [routerLink]="['/']">Asset Register Book</a>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a [routerLink]="['/home']">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Asset<span class="caret"></span></a> 
+        <ul class="dropdown-menu">
+           <li><a [routerLink]="['MainScreeneng','1']">Register Book Form</a></li>
+          <!-- <li><a [routerLink]="['AssetRegisterBookScreenOne_1eng']">AssetRegisterBookOne_1</a></li>
+          <li><a [routerLink]="['AssetRegisterBookScreenOne_2eng']">AssetRegisterBookOne_2</a></li>
+          <li><a [routerLink]="['AssetResgisterBookOne_3eng']">AssetResgisterBookOne_3</a></li>
+          <li><a [routerLink]="['AssetRegisterBookScreenOne_4eng']">AssetRegisterBookScreenOne_4</a></li>
+          <li><a [routerLink]="['AssetRegisterBookScreenOne_5eng']">AssetRegisterBookScreenOne_5</a></li>
+          <li><a [routerLink]="['AssetRegisterBookScreenTwo_1eng']">AssetRegisterBookScreenTwo_1</a></li>
+          <li><a [routerLink]="['AssetRegisterBookScreenTwo_2eng']">AssetRegisterBookScreenTwo_2</a></li>
+          <li><a [routerLink]="['AssetRegisterBookScreenTwo_3eng']">AssetRegisterBookScreenTwo_3</a></li>
+          <li><a [routerLink]="['AssetRegisterBookScreenTwo_4eng']">AssetRegisterBookScreenTwo_4</a></li>
+          <li><a [routerLink]="['PurchaseOrderDetailsScreeneng']">PurchaseOrderDetailsScreen</a></li>
+          <li><a [routerLink]="['InvoiceDetailsScreeneng']">InvoiceDetailsScreen</a></li>
+          <li><a [routerLink]="['WarrentyDetailsScreeneng']">WarrentyDetailsScreen</a></li>
+          <li><a [routerLink]="['InsuranceDetailScreeneng']">InsuranceDetailScreen</a></li>
+		   <li><a [routerLink]="['AuditTrailScreeneng']">AuditTrailScreen</a></li>
+          <li><a [routerLink]="['MainScreeneng']">MainScreen</a></li>
+          <li><a [routerLink]="['LandingPageScreeneng']">LandingPageScreen</a></li>
+		  <li><a [routerLink]="['UserAllocationScreenOne_1eng']">UserAllocationScreenOne_1</a></li>
+          <li><a [routerLink]="['UserAllocationScreenOne_2eng']">UserAllocationScreenOne_2</a></li>
+		  -->
+        </ul>
+      </li>
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Others<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+
+      
+          <li><a [routerLink]="['Screen_1700_rentaleng']">Rental Plan</a></li>
+       
+
+          <li><a [routerLink]="['Screen_1750_DataTransferLimiteng']">Data Transfer Limit</a></li>
+
+      
+          <li><a [routerLink]="['LIND_Screeneng']">LNID</a></li>
+   
+  
+          <li><a [routerLink]="['CensusCount_screeneng']">Census Count</a></li>
+
+
+          <li><a [routerLink]="['ReasonForNotCount_screeneng']">ReasonForNotCount</a></li>
+
+
+          <li><a [routerLink]="['ModeOfUseScreeneng']">ModeOfUse_Activity</a></li>
+
+          <li><a [routerLink]="['EngineerScreeneng']">EngineerScreen</a></li>
+
+
+          <li><a [routerLink]="['AccessorieScreeneng']">AccessorieScreen</a></li>
+
+   
+          <li><a [routerLink]="['AllocatedFromScreeneng']">AllocatedFromScreen</a></li>
+
+
+          <li><a [routerLink]="['ApproverOrProjectManagerScreeneng']">ApproverOrProjectManagerScreen</a></li>
+
+          <li><a [routerLink]="['ProjectNameScreeneng']">ProjectNameScreen</a></li>
+
+  
+          <li><a [routerLink]="['BuildingOrFloorScreeneng']">BuildingOrFloorScreen</a></li>
+
+
+          <li><a [routerLink]="['OS_Screeneng']">OS_Screen</a></li>
+
+
+          <li><a [routerLink]="['CategoryScreeneng']">CategoryScreen</a></li>
+
+
+          <li><a [routerLink]="['ApplicationScreeneng']">ApplicationScreen</a></li>
+
+
+          <li><a [routerLink]="['PoyearScreeneng']">PoyearScreen</a></li>
+
+
+          <li><a [routerLink]="['PoEntityScreeneng']">PoEntityScreen</a></li>
+
+
+          <li><a [routerLink]="['CurrencyScreeneng']">CurrencyScreen</a></li>
+
+
+          <li><a [routerLink]="['InvoiceVendorScreeneng']">InvoiceVendorScreen</a></li>
+
+
+          <li><a [routerLink]="['BillingEntityScreeneng']">BillingEntityScreen</a></li>
+
+
+          <li><a [routerLink]="['WarrantyStatusscreeneng']">WarrantyStatusscreen</a></li>
+
+
+          <li><a [routerLink]="['InsuranceDetailsScreeneng']">InsuranceDetailsScreen</a></li>
+		  
+		   <li><a [routerLink]="['AuditTrailScreeneng']">AuditTrailScreen</a></li>
+          <li><a [routerLink]="['MainScreeneng']">MainScreen</a></li>
+          <li><a [routerLink]="['LandingPageScreeneng']">LandingPageScreen</a></li>
+		  
+		   <li><a [routerLink]="['UserAllocationStatusScreeneng']">UserAllocationStatus</a></li>
+          <li><a [routerLink]="['Usedusscreeneng']">UsedAs</a></li>
+		  <li><a [routerLink]="['Sg_Screeneng']">Sg_Screen</a></li>
+		  <li><a [routerLink]="['Infra_own_screeneng']">Infra_own_screen</a></li>
+		  <li><a [routerLink]="['Srv_own_screeneng']">Srv_own_screen</a></li>
+		  <li><a [routerLink]="['Srv_adm_Screeneng']">Srv_adm_Screen</a></li>
+
+       </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

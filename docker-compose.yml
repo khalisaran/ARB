@@ -1,0 +1,21 @@
+version: '2'
+services:
+  db:
+    container_name: AssetRegisterBook-10046-db
+    build: db
+    image: assetregisterbook-10046/db
+    ports:
+      - "8091"
+  web:
+    depends_on:
+      - db
+
+    container_name: AssetRegisterBook-10046-web
+    build: desktop
+    image: assetregisterbook-10046/web
+    links:
+      - db:mydb
+
+    ports:
+      - "9090:8080"
+    entrypoint: ./wait-for-it.sh -t 180 --strict mydb:8091 -- java -jar AssetRegisterBook_10046.jar

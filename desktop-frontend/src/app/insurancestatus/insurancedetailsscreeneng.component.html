@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 145px">
+        <div class="col-lg-1 "><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="insurancestatus.insuransename"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 64px">
+        <div class="col-lg-1 "><label class="generated-label">Description</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="insurancestatus.insurancedescription"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 71px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="create_InsuranceStatus()" style="width: 100%;">save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 62px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="get_all_InsuranceStatus()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+
+    </div>
+</section>

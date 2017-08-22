@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 140px">
+        <div class="col-lg-2 "><label class="generated-label">OS Name</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="os.osname"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 64px">
+        <div class="col-lg-2 "><label class="generated-label">OS Description</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="os.osdescription"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 62px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="create_OS()" style="width: 100%;">Save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 43px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="get_all_OS()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+
+    </div>
+</section>

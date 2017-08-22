@@ -1,0 +1,77 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 62px">
+        <div class="col-lg-5 "><label class="generated-label" style="color:blue">Purchase Order Details</label>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 65px">
+        <div class="col-lg-2 "><label class="generated-label">Po Date</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.podate"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Po Entity</label>
+        </div>
+        <div class="col-lg-3 ">
+            <!--<md-select placeholder="Select" class="null" style="width: 100%;">
+        <md-option [value]="1">Value 1</md-option>
+        <md-option [value]="2">Value 2</md-option>
+        <md-option [value]="3">Value 3</md-option>
+        <md-option [value]="4">Value 4</md-option>
+
+        </md-select>-->
+        <md-select placeholder="Select" [(ngModel)]= 'assetregisterbookform.poentity' *ngIf="poentity_list">
+                <md-option *ngFor="let poent of poentity_list" value="{{poent}}" >{{poent.entityName}}</md-option>
+            </md-select>
+
+        </div>
+        </div>
+        <div class="row" style="padding-top: 40px">
+        <div class="col-lg-2 "><label class="generated-label">Po Ref No.</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.porefno"></md-input-container>
+        </div>
+        <div class="col-lg-1 "><label class="generated-label">Currency</label>
+        </div>
+        <div class="col-lg-3 ">
+            <md-select placeholder="Select" [(ngModel)]= 'assetregisterbookform.pur_currency' *ngIf="currency_list">
+                <md-option *ngFor="let curr of currency_list" value="{{curr}}" >{{curr.currenyName}}</md-option>
+            </md-select>
+
+    <!--<md-select placeholder="Select" class="null" style="width: 100%;">
+        <md-option [value]="1">Value 1</md-option>
+        <md-option [value]="2">Value 2</md-option>
+        <md-option [value]="3">Value 3</md-option>
+        <md-option [value]="4">Value 4</md-option>
+
+        </md-select>-->
+        </div>
+        </div>
+        <div class="row" style="padding-top: 49px">
+        <div class="col-lg-2 "><label class="generated-label">Po Financial Year</label>
+        </div>
+        <div class="col-lg-3 ">
+        
+         <md-select placeholder="Select" [(ngModel)]= 'assetregisterbookform.pofinancialyear' *ngIf="poyear_list">
+                <md-option *ngFor="let fy of poyear_list" value="{{fy}}" >{{fy.name}}</md-option>
+            </md-select>
+
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Unit cost</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.unitcost"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 46px">
+        <div class="col-lg-3 "><label class="generated-label">Other Information (If any)</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.otherinformation"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Delivery Date</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.deliverydate"></md-input-container>
+        </div>
+        </div>
+    </div>
+</section>

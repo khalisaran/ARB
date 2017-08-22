@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 147px">
+        <div class="col-lg-2 "><label class="generated-label">Floor No</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="buildingorfloor.floorno"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 59px">
+        <div class="col-lg-2 "><label class="generated-label">Floor Name</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="buildingorfloor.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 49px">
+        <div class="col-lg-1 "><label class="generated-label">Description</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="buildingorfloor.description"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 60px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="create_BuildingOrFloor()" style="width: 100%;">save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 33px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="get_all_BuildingOrFloor()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+
+    </div>
+</section>

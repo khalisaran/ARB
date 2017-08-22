@@ -1,0 +1,63 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 32px">
+        <div class="col-lg-4 "><label class="generated-label">Insurance Details</label>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 42px">
+        <div class="col-lg-1 "><label class="generated-label">Status</label>
+        </div>
+        <div class="col-lg-3 "><md-select placeholder="Select" class="null" style="width: 100%;">
+        <md-option [value]="1">Value 1</md-option>
+        <md-option [value]="2">Value 2</md-option>
+        <md-option [value]="3">Value 3</md-option>
+        <md-option [value]="4">Value 4</md-option>
+
+        </md-select>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Insured Value</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.insuredvalue"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 50px">
+        <div class="col-lg-2 "><label class="generated-label">Policy Number</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.policynumber"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">policy End date</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.policyenddate"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 46px">
+        <div class="col-lg-2 "><label class="generated-label">Company Name</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.companyname"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Renewal Required ?</label>
+        </div>
+        <div class="col-lg-3 "><md-select placeholder="Select" class="null" style="width: 100%;">
+        <md-option [value]="1">Value 1</md-option>
+        <md-option [value]="2">Value 2</md-option>
+        <md-option [value]="3">Value 3</md-option>
+        <md-option [value]="4">Value 4</md-option>
+
+        </md-select>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 46px">
+        <div class="col-lg-2 "><label class="generated-label">Other Information</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.otherinformation"></md-input-container>
+        </div>
+        <div class="col-lg-3 "><label class="generated-label">Date Of Communication</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.dateofcommunication"></md-input-container>
+        </div>
+        </div>
+
+    </div>
+</section>

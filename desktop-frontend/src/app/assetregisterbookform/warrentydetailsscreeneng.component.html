@@ -1,0 +1,74 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 41px">
+        <div class="col-lg-4 "><label class="generated-label">Warranty Details</label>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 47px">
+        <div class="col-lg-1 "><label class="generated-label">Status</label>
+        </div>
+        <div class="col-lg-3 ">
+             <md-select placeholder="Select" [(ngModel)]= 'assetregisterbookform.status' *ngIf="status_list">
+                <md-option *ngFor="let st of status_list" value="{{st}}" >{{st.name}}</md-option>
+            </md-select>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Support vendor</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.supportvendor"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 25px">
+        <div class="col-lg-2 "><label class="generated-label">Start Date</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.startdate"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">Terms</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.terms"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 26px">
+        <div class="col-lg-2 "><label class="generated-label">End Date</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.enddate"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">GST File No.</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.gtsfileno"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 22px">
+        <div class="col-lg-2 "><label class="generated-label">Carepack No.</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.carepackno"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 31px">
+        <div class="col-lg-3 "><label class="generated-label">Other Information (If Any)</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.otherinformation"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 37px">
+        <div class="col-lg-2 "><label class="generated-label">AMC Start Date</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.amcstartdate"></md-input-container>
+        </div>
+        <div class="col-lg-2 "><label class="generated-label">AMC Terms</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.amcterms"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 14px">
+        <div class="col-lg-2 "><label class="generated-label">AMC End date</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container>
+        <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.amcenddate"></md-input-container>
+        </div>
+        </div>
+
+    </div>
+</section>

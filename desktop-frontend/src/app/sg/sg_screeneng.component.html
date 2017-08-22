@@ -1,0 +1,41 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 117px">
+        <div class="col-lg-2 "><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="sg.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 57px">
+        <div class="col-lg-2 "><label class="generated-label">Description</label>
+        </div>
+        <div class="col-lg-3 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="sg.description"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 70px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="create_Sg()" style="width: 100%;">save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 65px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="get_all_Sg()" style="width: 100%;">getAll</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 48px">
+        <div class="col-lg-3 "><button class="btn btn-primary" (click)="delete_Sg()" style="width: 100%;">Delete</button>
+        </div>
+        </div>
+
+    </div>
+</section>
+<modal #modalSFU>
+	<modal-header [show-close]="true">
+		<h4 class="modal-title">ID required!</h4>
+	</modal-header>
+	<modal-body>
+		<md-input-container><input mdInput placeholder="Sg ID" [(ngModel)]="sg.id"></md-input-container>
+	</modal-body>
+	<modal-footer>
+		<button type="button" class="btn btn-default" data-dismiss="modal" (click)="modalSFU.dismiss()">Cancel</button>
+		<button type="button" class="btn btn-primary" (click)="search_for_update_Sg()">Get Sg</button>
+	</modal-footer>
+</modal>
