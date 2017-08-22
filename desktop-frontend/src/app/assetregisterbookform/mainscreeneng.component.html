@@ -350,17 +350,17 @@
                                         </md-select>
                                     </div>
                                 </div>
-								
+
                                 <div class="row" style="padding-top: 39px">
                                     <div class="col-lg-2 "><label class="generated-label">Used As</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                       <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.usedas' *ngIf="usedas_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.usedas' *ngIf="usedas_list">
                                             <md-option *ngFor="let us of usedas_list" value="{{us}}">{{us.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
-								<div class="row" style="padding-top: 38px">
+                                <div class="row" style="padding-top: 38px">
                                     <div class="col-lg-2 "><label class="generated-label">Monitor Type</label>
                                     </div>
                                     <div class="col-lg-2 ">
@@ -1298,13 +1298,15 @@
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 97px">
-                                    <div class="col-lg-2 "><button class="btn btn-primary" (click)="create_Assetregisterbookform()" style="width: 100%;" [disabled]="assetregisterbookform.id!=0">Save</button>
+                                    <div class="col-lg-2 "><button class="btn btn-primary" (click)="create_Assetregisterbookform()" style="width: 100%;"
+                                            [disabled]="assetregisterbookform.id!=0">Save</button>
                                     </div>
                                     <div class="col-lg-2 "><a routerLink="/home"><button class="btn btn-primary" style="width: 100%;">Cancel</button></a>
                                     </div>
                                     <!--<div class="col-lg-2 "><button class="btn btn-primary" (click)="get_all_Assetregisterbookform()" style="width: 100%;">getall</button>
                                     </div>-->
-                                    <div class="col-lg-2 "><button class="btn btn-primary" (click)="update_Assetregisterbookform()" style="width: 100%;" [disabled]="assetregisterbookform.id==0">Update</button>
+                                    <div class="col-lg-2 "><button class="btn btn-primary" (click)="update_Assetregisterbookform()" style="width: 100%;"
+                                            [disabled]="assetregisterbookform.id==0">Update</button>
                                     </div>
                                     <div class="col-lg-2 "><button class="btn btn-primary" (click)="delete_Assetregisterbookform()" style="width: 100%;">Delete</button>
                                     </div>
