@@ -8,7 +8,7 @@
 
             <div class="col-lg-12 " style="width:100%;height: 500px;">
                 <ag-grid-angular #Table_151Grid style="width: 100%; height: 100%;" class="ag-fresh" [gridOptions]="Table_151GridOptions"
-                    [rowData]="array_Assetregisterbookform"></ag-grid-angular>
+                    [rowData]="array_Assetregisterbookform" (rowClicked)="  onEditSelected($event)"></ag-grid-angular>
             </div>
         </div>
         <br>

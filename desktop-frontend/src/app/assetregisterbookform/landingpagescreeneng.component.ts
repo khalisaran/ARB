@@ -461,17 +461,19 @@ export class LandingPageScreenengComponent implements OnInit {
       groupSelectsChildren: true,
       suppressRowClickSelection: true,
       
-    	onRowClicked: function(event) {
+    	/*onRowClicked: function(event) {
       	console.error('on selecting row');
-        this.router.navigate(['/MainScreeneng']);
+        
         this.assetregisterbookform = event.node.data;
         assetregisterbookformservice.IAssetregisterbookform = this.assetregisterbookform;
         console.log('a row was clickedddd'+JSON.stringify(assetregisterbookformservice.IAssetregisterbookform));
+        this.onEditSelected();
         //this.router.navigateByUrl('/MainScreeneng');
-    	}
+    	}*/
     };
 
   }
+  
 
   ngOnInit() {
     this.get_all_Assetregisterbookform();
@@ -492,6 +494,7 @@ export class LandingPageScreenengComponent implements OnInit {
 
   onRemoveSelected() {
     console.log("removing data")
+    this.router.navigate(['/MainScreeneng']);
     this.selectedRowData = this.Table_151GridOptions.api.getSelectedRows();
     //console.error("selected row data------>"+JSON.stringify(this.selectedRowData));
     for(var i =0; i<this.selectedRowData.length; i++){
@@ -514,6 +517,15 @@ export class LandingPageScreenengComponent implements OnInit {
           this.toastr.error('Check the browser console to see more info.','Error!');
         });
 }
+
+  onEditSelected(event) {
+
+    this.assetregisterbookform = event.node.data;
+    this.assetregisterbookformservice.IAssetregisterbookform = this.assetregisterbookform;
+    console.log('a row was clickedddd'+JSON.stringify(this.assetregisterbookformservice.IAssetregisterbookform));
+    this.router.navigate(['MainScreeneng',event.node.data.id]);
+    
+  }
 
 // scrambleAndRefreshAll() {
 //   this.scramble();
