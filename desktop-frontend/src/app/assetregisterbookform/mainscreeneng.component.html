@@ -681,7 +681,7 @@
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.application1' *ngIf="application_list">
-                                            <md-option *ngFor="let application_list of application_list" value="{{application}}">{{application.name}}</md-option>
+                                            <md-option *ngFor="let application of application_list" value="{{application}}">{{application.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>

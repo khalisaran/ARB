@@ -22,81 +22,70 @@ export class LandingPageScreenengComponent implements OnInit {
     	columnDefs: [
     		{
     			headerName: "Account(CAF)Number",
-    			field: "accountcafnumber",
+    			field: "acc_no",
     		},
     		{
     			headerName: "Datacard Type",
-    			field: "datacardtype",
+    			field: "data_type",
     		},
     		{
     			headerName: "Contract Period Duration",
-    			field: "contractperiodduration",
-    		},
-        {
-          headerName:"Invoice Amount",
-          field:"invoiceAmount",
-        },
-        {
-          headerName:"Policy Number",
-          field:"policyNumber",
-        }
-        ,{
+    			field: "cpd",
+    		},{
            headerName:"Data transfer limit",
-          field:"datatransferlimit"
+          field:"Data_Limit"
         },{
           headerName:"Payment StartDate  with rental chages",
-          field:"paymentstartdatewithrentalchages",
+          field:"payment_start_date",
         },{
           headerName:"Free Rental",
-          field:"freerental",
-         },{
-           headerName:"Bulider/Floor",
-           field:"buliderfloor",
+          field:"fr",
          },{
            headerName:"Fixed Cost",
-           field:"fixedcost",
+           field:"fc",
          },{
            headerName:"Rental Plan",
-           field:"rentalplan"
+           field:"Rental"
          },{
            headerName:"Start Date",
-           field:"startdate",
+           field:"start_date",
           },{
             headerName:"End Date",
-            field:"enddate"
+            field:"end_date"
           },{
             headerName:"Advanced Rental",
-            field:"advancedrental",
-          },{
+            field:"ar",
+          },
+        {
             headerName:"Deactivation Type",
-            field:"deactivationtype",
+            field:"dact_type",
           },{
             headerName:"Permanent Deactivation Date",
-            field:"permanentdeactivationdate",
+            field:"datc_on",
           },{
             headerName:"1st Deactivation Date",
-            field:"firstdeactivationdate",
-          },,{
+            field:"dact_on_1",
+          },{
             headerName:"2nd Deactivation Date",
-            field:"seconddeactivationdate",
+            field:"dact_on_2",
           },{
             headerName:"3rd Deactivation Date",
-            field:"thirddeactivationdate",
+            field:"dact_on_3",
           },{
             headerName:"1st Reactivation Date",
-            field:"firstreactivationdate",
+            field:"ract_on_1",
           },{
             headerName:"2nd Reactivation Date",
-            field:"secondreactivationdate",
+            field:"ract_on_2",
           },{
             headerName:"3rd Reactivation Date",
-            field:"thirdreactivationdate",
+            field:"ract_on_3",
           },{
             headerName:"Remarks",
-            field:"remarks",
+            field:"remk",
           },{
             headerName:"iOS version",
-            field:"iosversion",
+            field:"ios",
           },{
             headerName:"FLASH",
             field:"flash",
@@ -105,154 +94,163 @@ export class LandingPageScreenengComponent implements OnInit {
             field:"dram",
           },{
             headerName:"Supplied by GTL",
-            field:"suppliedbygtl",
+            field:"supply",
           },{
             headerName:"No. of Serial Port",
-            field:"noofserialport",
+            field:"serial1",
           },{
             headerName:"No. of ISDN Port",
-            field:"noofisdnport",
+            field:"isdn",
           },{
             headerName:"No. of Ethernet Port",
-            field:"noofethernetport",
+            field:"ethernet",
           },{
             headerName:"No. of PSTN Port",
-            field:"noofpstnport",
+            field:"pstn",
           },{//configuration details object
             headerName:"Processor",
             field:"processor",
           },{
             headerName:"Initial HDD(GB)",
-            field:"initialhddgb",
+            field:"hdd_initial",
           },{
             headerName:"Initial RAM(GB)",
-            field:"initialramgb",
+            field:"ram_initial",
           },{
             headerName:"CPU Speed(MHz)",
-            field:"cpuspeedmhz",
+            field:"config",
           },{
             headerName:"Present HDD(GB)",
-            field:"presenthddgb",
+            field:"hdd",
           },{
             headerName:"Present RAM(GB)",
-            field:"presentramgb",
+            field:"ram",
           },{
             headerName:"No.of CPU",
-            field:"noofcpu",
+            field:"cpu",
           },{
             headerName:"HDD Details",
-            field:"hdddetails",
+            field:"hdd1",
           },{
             headerName:"DAT,DLT(GB)",
-            field:"datdltingb",
+            field:"dat",
           },{
             headerName:"RAM Details",
-            field:"ramdetails",
+            field:"ram1",
           },{
             headerName:"Model No",
-            field:"modelno",
+            field:"model_no",
           },{
             headerName:"Speed",
             field:"speed",
           },{
             headerName:"PortNo",
-            field:"portno",
+            field:"port",
           },{
             headerName:"Catrige NO",
-            field:"catrigeno",
+            field:"catrige_no",
           },{//purchase Order Details
             headerName:"PO Date",
-            field:"podate"
+            field:"po_date"
+          },{
+            headerName:"PO Display Date",
+            field:"disppo_date",
           },{
             headerName:"PO Ref. No.",
-            field:"porefno",
+            field:"po_ref_no",
           },{
             headerName:"PO Financial Year",
-            field:"pofinancialyear",
+            field:"po_year",
           },{
             headerName:"Other Information",
-            field:"otherinformation",
+            field:"ol2_1",
           },{
             headerName:"PO Entity",
-            field:"poentity",
+            field:"po_entity",
           },{
             headerName:"Purchase Currency",
-            field:"pur_currency",
+            field:"currency",
           },{
             headerName:"Unit Cost",
-            field:"unitcost",
+            field:"cost",
           },{
             headerName:"Delivery Date",
-            field:"deliverydate"
+            field:"delivery_date"
            },{//Invoice details
             headerName:"Invoice Date",
-            field:"Invoice Date",
+            field:"inv_date",
           },{
             headerName:"Invoice Number",
-            field:"invoicenumber",
+            field:"inv_no",
           },{
             headerName:"Vendor Name",
-            field:"vendorname",
+            field:"inv_vendor",
           },{
             headerName:"Invoice Other Information",
-            field:"otherinformation",
+            field:"ol2",
           },{
             headerName:"Billing Entity",
-            field:"billingentity"
+            field:"bill_entity",
           },{
             headerName:"Invoice Currency",
             field:"inv_currency",
           },{
             headerName:"Invoice Amount",
-            field:"invoiceamount",
+            field:"inv_amount",
           },{
             headerName:"Installation Date",
-            field:"installationdate",
-          },{//Warrenty Details
-            headerName:"Warranty Status",
-            field:"status",
+            field:"inst_date",
+          },{
+            headerName:"Installation Display Date",
+            field:"dispinst_date",
+          },{//Insurance Details
+            headerName:"Insurance Status",
+            field:"ins_status",
           },{
             headerName:"Policy Number",
-            field:"policynumber",
+            field:"ins_policy_no",
           },{
             headerName:"Company Name",
-            field:"companyname",
+            field:"ins_com_name",
           },{
             headerName:"Insurance Other Information",
-            field:"otherinformation",
+            field:"ol1_1",
           },{
             headerName:"Insured Value",
-            field:"insuredvalue",
+            field:"ins_value",
           },{
             headerName:"Policy End Date",
-            field:"policyenddate",
+            field:"ins_expiry_date",
+          },{
+            headerName:"Policy End Display Date",
+            field:"dispins_expiry_date",
           },{
             headerName:"Renewal Required?",
-            field:"renewalrequired",
+            field:"ins_renewal",
           },{
             headerName:"Date of Communication",
-            field:"dateofcommunication",
+            field:"doc",
           },{//Audit Trail
             headerName:"Created By",
-            field:"createdby",
+            field:"created_by",
           },{
             headerName:"Last Modified By",
-            field:"lastmodifiedby",
+            field:"eheditor",
           },{
             headerName:"Created On",
-            field:"createdon",
+            field:"created_on",
           },{
             headerName:"Last Modified On",
-            field:"lastmodifiedon",
+            field:"ehDate",
           },{
             headerName:"oprn_grp",
             field:"oprn_grp",
           },{
             headerName:"Despatch from Kolkata to",
-            field:"despatchfromkolkatato",
+            field:"loc",
           },{
             headerName:"Despatch Date",
-            field:"despatchdate",
+            field:"ddate",
           },{
             headerName:"date1",
             field:"date1",
@@ -261,53 +259,191 @@ export class LandingPageScreenengComponent implements OnInit {
             field:"date2",
           },{//Other information Tab
             headerName:"Counted for Census?",
-            field:"countedforcensus",
+            field:"census_count",
           },{
             headerName:"Reason for not count",
-            field:"reasonfornotcount",
+            field:"census_reason",
           },{
             headerName:"Remarks OtherInformation",
-            field:"remarks",
+            field:"census_remarks",
           },{
             headerName:"Mode of Use",
-            field:"modeofuse",
+            field:"mode",
           },{
             headerName:"Date of Allocaiton",
-            field:"dateofallocaiton",
+            field:"doa",
           },{
             headerName:"Engineer's Name",
-            field:"engineersname",
+            field:"engineer",
           },{
             headerName:"Last returned by",
-            field:"lastreturnedby",
+            field:"last",
           },{
             headerName:"Accessories",
-            field:"accessories",
+            field:"acce_1",
           },{
             headerName:"Allocated from",
-            field:"allocatedfrom",
+            field:"collected_from",
           },{
             headerName:"Allocation Form no.",
-            field:"allocationformno",
-          }/*,{
-            headerName:"",
-            field:"",
+            field:"allocation_form_no",
           },{
-            headerName:"",
-            field:"",
+            headerName:"safegaurd Installed?",
+            field:"sg",
           },{
-            headerName:"",
-            field:"",
+            headerName:"Approver/Project Manager",
+            field:"approver",
           },{
-            headerName:"",
-            field:"",
+            headerName:"Expected date of return",
+            field:"edor",
           },{
-            headerName:"",
-            field:"",
+            headerName:"Project Name",
+            field:"project_name",
           },{
-            headerName:"",
-            field:"",
-          }  */  	],
+            headerName:"Project Code",
+            field:"project_code",
+          },{
+            headerName:"Mac Address",
+            field:"mac_add",
+          },{
+           headerName:"Bulider/Floor",
+           field:"floor_number",
+         },
+        {
+          headerName:"Seat No.",
+          field:"seat_number",
+        },
+        {
+          headerName:"Host Name",
+          field:"host_name",
+        },{
+          headerName:"I.P.Address",
+          field:"ip",
+        },{
+          headerName:"I.P.Address display",
+          field:"ip_1",
+        },{
+          headerName:"OS",
+          field:"os",
+        },{
+          headerName:"Service Pack",
+          field:"sp",
+        },{
+          headerName:"Type",
+          field:"type",
+        },{
+          headerName:"Hardware Type",
+          field:"h_type",
+        },{
+          headerName:"Category",
+          field:"catagory",
+        },{
+          headerName:"Application",
+          field:"application1",
+        },{
+          headerName:"Functionality",
+          field:"application",
+        },{
+          headerName:"Server Administrator",
+          field:"srv_adm",
+        },{
+          headerName:"Server Owner",
+          field:"srv_own",
+        },{
+          headerName:"Infrastructure owner",
+          field:"infra_own",
+        },{
+          headerName:"System Steward",
+          field:"syssteward",
+        },{
+          headerName:"Office Location",
+          field:"office",
+        },{
+          headerName:"Rack No.",
+          field:"rack",
+        },{
+          headerName:"Shelf No.",
+          field:"shelf",
+        },{
+          headerName:"Server Imporance",
+          field:"type2",
+        },{
+          headerName:"Date of assignment of server",
+          field:"doa1",
+        },{
+          headerName:"dispayDoa",
+          field:"dispdoa1",
+        },{
+          headerName:"Expected realese date",
+          field:"erd",
+        },{
+          headerName:"Display ERD",
+          field:"disperd",
+        },{
+          headerName:"Network Category(VLAN)",
+          field:"net_cat",
+        },{
+          headerName:"HYPER V Server?",
+          field:"hyper",
+        },{
+          headerName:"HYPER Server Name",
+          field:"hyper_1",
+        },{
+          headerName:"Connection",
+          field:"connection",
+        },{
+          headerName:"Mobile No",
+          field:"airtelno",
+        },{
+          headerName:"Scan copy of user signed Document",
+          field:"scan",
+        },{
+          headerName:"Data Classification",
+          field:"dc1",
+        },{
+          headerName:"Remarks(if any)",
+          field:"remarks_1",
+        },{
+          headerName:"Status",
+          field:"wty_status",
+        },{
+          headerName:"Start Date",
+          field:"wty_start_date",
+        },{
+          headerName:"Display Start Date",
+          field:"dispwty_start_date",
+        },{
+          headerName:"End Date",
+          field:"wty_end_date",
+        },{
+          headerName:"Display End date ",
+          field:"dispwty_end_date",
+        },{
+          headerName:"Carepack No.",
+          field:"carepack",
+        },{
+          headerName:"OtherInfo(if any)",
+          field:"ol1",
+        },{
+          headerName:"AMC Start Date",
+          field:"amc_start_date",
+        },{
+          headerName:"AMC_End_Date",
+          field:"amc_end_date",
+        },{
+          headerName:"Support Vendor",
+          field:"sup_vendor",
+        },{
+          headerName:"Terms",
+          field:"wty_terms",
+        },{
+          headerName:"GST File No.",
+          field:"file_no",
+        },{
+          headerName:"AMC terms",
+          field:"amc_terms",
+        }
+  	],
           
     	rowSelection: 'single',
     	onRowClicked: function(event) {
