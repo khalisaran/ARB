@@ -21,12 +21,12 @@ export interface IAssetregisterbookform {
     model: string;
     lvd: string;
     per: string;
-    diswty_start_date: string;
+    dispwty_start_date: string;
     new_email: string;
     dispinst_date: string;
     period: string;
     remk: string;
-    new_jobjoiningdate: string;
+    new_joiningdate: string;
     ip: string;
     new_entity: string;
     processor: string;
