@@ -223,7 +223,7 @@ export class MainScreenengComponent implements OnInit {
     _class: '',
     engineer_1: '',
     fc: '',
-    conection: '',
+    connection: '',
     inv_no: '',
     catrige_no: '',
     collected_from: '',

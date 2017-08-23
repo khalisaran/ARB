@@ -967,9 +967,9 @@ public class Assetregisterbookform  implements Serializable  {
 
 
 	@ApiModelProperty( value = "Description", required = true )
-@JsonProperty("conection")
-	@Field("conection")
- 	private	String conection;
+@JsonProperty("connection")
+	@Field("connection")
+ 	private	String connection;
 
 
 
@@ -2565,13 +2565,13 @@ public class Assetregisterbookform  implements Serializable  {
 		return fc;
 	}
 
-	public void setconection(String conection) {
-		this.conection = conection;
+	public void setconnection(String connection) {
+		this.connection = connection;
 	}
 
 
-	public String getconection() {
-		return conection;
+	public String getconnection() {
+		return connection;
 	}
 
 	public void setinv_no(String inv_no) {

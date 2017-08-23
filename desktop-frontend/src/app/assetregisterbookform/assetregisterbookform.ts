@@ -128,7 +128,7 @@ export interface IAssetregisterbookform {
     _class: string;
     engineer_1: string;
     fc: string;
-    conection: string;
+    connection: string;
     inv_no: string;
     catrige_no: string;
     collected_from: string;
