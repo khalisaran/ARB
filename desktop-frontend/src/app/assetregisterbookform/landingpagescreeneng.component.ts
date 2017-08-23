@@ -461,6 +461,14 @@ export class LandingPageScreenengComponent implements OnInit {
     this.get_all_Assetregisterbookform();
   }
 
+  export(){
+    console.log("exporting data")
+    var param ={
+      fileName: document.querySelector('#fileName')
+    }
+    this.Table_151GridOptions.api.exportDataAsCsv();
+  }
+
    
 
   get_all_Assetregisterbookform(){
