@@ -943,15 +943,6 @@ public class Assetregisterbookform  implements Serializable  {
 	@Field("EhEditor")
  	private	String eheditor;
 
-
-
-	@ApiModelProperty( value = "Description", required = true )
-@JsonProperty("_class")
-	@Field("_class")
- 	private	String _class;
-
-
-
 	@ApiModelProperty( value = "Description", required = true )
 @JsonProperty("engineer_1")
 	@Field("engineer_1")
@@ -2536,15 +2527,6 @@ public class Assetregisterbookform  implements Serializable  {
 
 	public String geteheditor() {
 		return eheditor;
-	}
-
-	public void set_class(String _class) {
-		this._class = _class;
-	}
-
-
-	public String get_class() {
-		return _class;
 	}
 
 	public void setengineer_1(String engineer_1) {
