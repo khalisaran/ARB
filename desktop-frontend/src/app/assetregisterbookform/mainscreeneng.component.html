@@ -66,7 +66,7 @@
                                     <div class="col-lg-3 " style="margin-left: 55px"><label class="generated-label">Rental Plan</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.rental' *ngIf="rentalplan_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.rental' *ngIf="rentalplan_list" style="display: block;">
                                             <md-option *ngFor="let rentalplan of rentalplan_list" value="{{rentalplan.name}}">{{rentalplan.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -81,7 +81,7 @@
                                     <div class="col-lg-3 " style="margin-left: 55px"><label class="generated-label">Data Transfer Limit</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.data_limit' *ngIf="datatransferlimit_type">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.data_limit' *ngIf="datatransferlimit_type" style="display: block;">
                                             <md-option *ngFor="let datattransferlimit of datatransferlimit_type" value="{{datattransferlimit.name}}">{{datattransferlimit.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -345,7 +345,7 @@
                                     <div class="col-lg-2 "><label class="generated-label">Status</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.status' *ngIf="user_allocation_status_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.status' *ngIf="user_allocation_status_list" style="display: block;">
                                             <md-option *ngFor="let alloc of user_allocation_status_list" value="{{alloc}}">{{alloc.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -355,7 +355,7 @@
                                     <div class="col-lg-2 "><label class="generated-label">Used As</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.usedas' *ngIf="usedas_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.usedas' *ngIf="usedas_list" style="display: block;">
                                             <md-option *ngFor="let us of usedas_list" value="{{us.name}}">{{us.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -515,7 +515,7 @@
                                     <div class="col-lg-2 "><label class="generated-label">Counted for Census ?</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.census_count' *ngIf="censuscount_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.census_count' *ngIf="censuscount_list" style="display: block;">
                                             <md-option *ngFor="let censuscount of censuscount_list" value="{{censuscount.name}}">{{censuscount.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -529,7 +529,7 @@
                                     <div class="col-lg-3 "><label class="generated-label">Reason for not count</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: -95px;">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.census_reason' *ngIf="reasonfornotcount_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.census_reason' *ngIf="reasonfornotcount_list" style="display: block;">
                                             <md-option *ngFor="let reasonfornotcount of reasonfornotcount_list" value="{{reasonfornotcount.reason}}">{{reasonfornotcount.reason}}</md-option>
                                         </md-select>
                                     </div>
@@ -538,14 +538,14 @@
                                     <div class="col-lg-2 "><label class="generated-label">Mode Of Use</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.mode' *ngIf="modeofuse_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.mode' *ngIf="modeofuse_list" style="display: block;">
                                             <md-option *ngFor="let modeofuse of modeofuse_list" value="{{modeofuse.name}}">{{modeofuse.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;"><label class="generated-label">Approver/Project Manager</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: -95px;">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.approver' *ngIf="manager_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.approver' *ngIf="manager_list" style="display: block;">
                                             <md-option *ngFor="let manager of manager_list" value="{{manager.name}}">{{manager.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -568,14 +568,14 @@
                                     <div class="col-lg-2 "><label class="generated-label">Engineer's Name</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.engineer' *ngIf="engineer_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.engineer' *ngIf="engineer_list" style="display: block;">
                                             <md-option *ngFor="let engineer of engineer_list" value="{{engineer.name}}">{{engineer.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Project Name</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.project_name' *ngIf="projectname_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.project_name' *ngIf="projectname_list" style="display: block;">
                                             <md-option *ngFor="let projectname of projectname_list" value="{{projectname.name}}">{{projectname.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -596,7 +596,7 @@
                                     <div class="col-lg-2 "><label class="generated-label">Accessories</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.acce_1' *ngIf="accessories_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.acce_1' *ngIf="accessories_list" style="display: block;">
                                             <md-option *ngFor="let accessories of accessories_list" value="{{accessories.name}}">{{accessories.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -618,14 +618,14 @@
                                     <div class="col-lg-2 "><label class="generated-label">Allocated from</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.collected_from' *ngIf="allocatedfrom_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.collected_from' *ngIf="allocatedfrom_list" style="display: block;">
                                             <md-option *ngFor="let allocatedfrom of allocatedfrom_list" value="{{allocatedfrom.name}}">{{allocatedfrom.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-1 " style="margin-left: 95px;"><label class="generated-label">Building/Floor</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.floor_number' *ngIf="buildingorflorr_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.floor_number' *ngIf="buildingorflorr_list" style="display: block;">
                                             <md-option *ngFor="let buildingorflorr of buildingorflorr_list" value="{{buildingorflorr.floorno}}">{{buildingorflorr.floorno}}</md-option>
                                         </md-select>
                                     </div>
@@ -641,7 +641,7 @@
                                     <div class="col-lg-2 "><label class="generated-label">Safegaurd Installed?</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.sg' *ngIf="saferguardinstalled_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.sg' *ngIf="saferguardinstalled_list" style="display: block;">
                                             <md-option *ngFor="let saferguardinstalled of saferguardinstalled_list" value="{{saferguardinstalled.name}}">{{saferguardinstalled.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -660,7 +660,7 @@
                                     <div class="col-lg-1 " style="margin-left: 95px;"><label class="generated-label">Category</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.category' *ngIf="category_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.category' *ngIf="category_list" style="display: block;">
                                             <md-option *ngFor="let category of category_list" value="{{category.name}}">{{category.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -677,7 +677,7 @@
                                     <div class="col-lg-1 " style="margin-left: 95px;"><label class="generated-label">Application</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.application1' *ngIf="application_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.application1' *ngIf="application_list" style="display: block;">
                                             <md-option *ngFor="let application of application_list" value="{{application.name}}">{{application.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -686,7 +686,7 @@
                                     <div class="col-lg-1 "><label class="generated-label">OS</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.os' *ngIf="os_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.os' *ngIf="os_list" style="display: block;">
                                             <md-option *ngFor="let os of os_list" value="{{os.osname}}">{{os.osname}}</md-option>
                                         </md-select>
                                     </div>
@@ -780,7 +780,7 @@
                                     <div class="col-lg-3 "><label class="generated-label">Server Administrator</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.srv_adm' *ngIf="srv_adm_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.srv_adm' *ngIf="srv_adm_list" style="display: block;">
                                             <md-option *ngFor="let srv_adm of srv_adm_list" value="{{srv_adm.name}}">{{srv_adm.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -789,14 +789,14 @@
                                     <div class="col-lg-1 "><label class="generated-label">Type</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.type' *ngIf="type_otherinfo_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.type' *ngIf="type_otherinfo_list" style="display: block;">
                                             <md-option *ngFor="let type_info of type_otherinfo_list" value="{{type_info.name}}">{{type_info.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2 " ><label class="generated-label">Server Owner</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.srv_own' *ngIf="srv_own_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.srv_own' *ngIf="srv_own_list" style="display: block;">
                                             <md-option *ngFor="let srv_own of srv_own_list" value="{{srv_own.name}}">{{srv_own.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -810,7 +810,7 @@
                                     <div class="col-lg-3 " ><label class="generated-label">Infrastructure Owner</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.infra_own' *ngIf="infra_own_list">
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.infra_own' *ngIf="infra_own_list" style="display: block;">
                                             <md-option *ngFor="let infra_own of infra_own_list" value="{{infra_own.name}}">{{infra_own.name}}</md-option>
                                         </md-select>
                                     </div>
@@ -1175,12 +1175,12 @@
                                 <div class="row" style="padding-top: 42px">
                                     <div class="col-lg-1 "><label class="generated-label">Status</label>
                                     </div>
-                                    <div class="col-lg-3 ">
+                                    <div class="col-lg-3 " style="margin-left: 95px;">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.ins_status' *ngIf="invoi_status_list" style="display: block;">
                                             <md-option *ngFor="let invoi_status of invoi_status_list" value="{{invoi_status.insuransename}}">{{invoi_status.insuransename}}</md-option>
                                         </md-select>
                                     </div>
-                                    <div class="col-lg-2" style="margin-left: 190px;"><label class="generated-label">Insured Value</label>
+                                    <div class="col-lg-2" style="margin-left: 95px;"><label class="generated-label">Insured Value</label>
                                     </div>
                                     <div class="col-lg-3">
                                         <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.ins_value"></md-input-container>
