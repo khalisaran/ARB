@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.rental' *ngIf="rentalplan_list">
-                                            <md-option *ngFor="let rentalplan of rentalplan_list" value="{{rentalplan}}">{{rentalplan.name}}</md-option>
+                                            <md-option *ngFor="let rentalplan of rentalplan_list" value="{{rentalplan.name}}">{{rentalplan.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.data_limit' *ngIf="datatransferlimit_type">
-                                            <md-option *ngFor="let datattransferlimit of datatransferlimit_type" value="{{datattransferlimit}}">{{datattransferlimit.name}}</md-option>
+                                            <md-option *ngFor="let datattransferlimit of datatransferlimit_type" value="{{datattransferlimit.name}}">{{datattransferlimit.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
                                         <div class="form-check" style="width: 100%;">
-                                            <label class="form-check-label"><input type="radio" class="form-check-input" [(ngModel)]='assetregisterbookform.dact_type' value="Radio"/>Radio</label>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input" [(ngModel)]='assetregisterbookform.dact_type' value="yes"/>Radio</label>
                                         </div>
                                     </div>
                                 </div>
@@ -281,7 +281,7 @@
                                     <div class="col-lg-2 " style="margin-left: 95px"><label class="generated-label">RAM Details</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.hdd1"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.ram1"></md-input-container>
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 48px">
@@ -519,7 +519,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.census_count' *ngIf="censuscount_list">
-                                            <md-option *ngFor="let censuscount of censuscount_list" value="{{censuscount}}">{{censuscount.name}}</md-option>
+                                            <md-option *ngFor="let censuscount of censuscount_list" value="{{censuscount.name}}">{{censuscount.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Remarks(if any)</label>
@@ -533,7 +533,7 @@
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: -95px;">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.census_reason' *ngIf="reasonfornotcount_list">
-                                            <md-option *ngFor="let reasonfornotcount of reasonfornotcount_list" value="{{reasonfornotcount}}">{{reasonfornotcount.name}}</md-option>
+                                            <md-option *ngFor="let reasonfornotcount of reasonfornotcount_list" value="{{reasonfornotcount.reason}}">{{reasonfornotcount.reason}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -542,14 +542,14 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.mode' *ngIf="modeofuse_list">
-                                            <md-option *ngFor="let modeofuse of modeofuse_list" value="{{modeofuse}}">{{modeofuse.name}}</md-option>
+                                            <md-option *ngFor="let modeofuse of modeofuse_list" value="{{modeofuse.name}}">{{modeofuse.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;"><label class="generated-label">Approver/Project Manager</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: -95px;">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.approver' *ngIf="manager_list">
-                                            <md-option *ngFor="let manager of manager_list" value="{{manager}}">{{manager.name}}</md-option>
+                                            <md-option *ngFor="let manager of manager_list" value="{{manager.name}}">{{manager.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -572,14 +572,14 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.engineer' *ngIf="engineer_list">
-                                            <md-option *ngFor="let engineer of engineer_list" value="{{engineer}}">{{engineer.name}}</md-option>
+                                            <md-option *ngFor="let engineer of engineer_list" value="{{engineer.name}}">{{engineer.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Project Name</label>
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.project_name' *ngIf="projectname_list">
-                                            <md-option *ngFor="let projectname of projectname_list" value="{{projectname}}">{{projectname.name}}</md-option>
+                                            <md-option *ngFor="let projectname of projectname_list" value="{{projectname.name}}">{{projectname.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -600,7 +600,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.acce_1' *ngIf="accessories_list">
-                                            <md-option *ngFor="let accessories of accessories_list" value="{{accessories}}">{{accessories.name}}</md-option>
+                                            <md-option *ngFor="let accessories of accessories_list" value="{{accessories.name}}">{{accessories.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Mac Address</label>
@@ -622,14 +622,14 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.collected_from' *ngIf="allocatedfrom_list">
-                                            <md-option *ngFor="let allocatedfrom of allocatedfrom_list" value="{{allocatedfrom}}">{{allocatedfrom.name}}</md-option>
+                                            <md-option *ngFor="let allocatedfrom of allocatedfrom_list" value="{{allocatedfrom.name}}">{{allocatedfrom.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-1 " style="margin-left: 95px;"><label class="generated-label">Building/Floor</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.floor_number' *ngIf="buildingorflorr_list">
-                                            <md-option *ngFor="let buildingorflorr of buildingorflorr_list" value="{{buildingorflorr}}">{{buildingorflorr.name}}</md-option>
+                                            <md-option *ngFor="let buildingorflorr of buildingorflorr_list" value="{{buildingorflorr.floorno}}">{{buildingorflorr.floorno}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -645,7 +645,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.sg' *ngIf="saferguardinstalled_list">
-                                            <md-option *ngFor="let saferguardinstalled of saferguardinstalled_list" value="{{saferguardinstalled}}">{{saferguardinstalled.name}}</md-option>
+                                            <md-option *ngFor="let saferguardinstalled of saferguardinstalled_list" value="{{saferguardinstalled.name}}">{{saferguardinstalled.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Seat No.</label>
@@ -664,7 +664,7 @@
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.category' *ngIf="category_list">
-                                            <md-option *ngFor="let category of category_list" value="{{category}}">{{category.name}}</md-option>
+                                            <md-option *ngFor="let category of category_list" value="{{category.name}}">{{category.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -681,7 +681,7 @@
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.application1' *ngIf="application_list">
-                                            <md-option *ngFor="let application of application_list" value="{{application}}">{{application.name}}</md-option>
+                                            <md-option *ngFor="let application of application_list" value="{{application.name}}">{{application.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -690,7 +690,7 @@
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.os' *ngIf="os_list">
-                                            <md-option *ngFor="let os of os_list" value="{{os}}">{{os.name}}</md-option>
+                                            <md-option *ngFor="let os of os_list" value="{{os.osname}}">{{os.osname}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-1 " style="margin-left: 95px;"><label class="generated-label">Functionality</label>
@@ -827,7 +827,7 @@
                                     <div class="col-lg-3 " style="margin-left: 95px"><label class="generated-label">System Steward</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.SysSteward"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.syssteward"></md-input-container>
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 48px">
@@ -905,7 +905,7 @@
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 190px">
                                         <div class="form-check" style="width: 100%;">
-                                            <label class="form-check-label"><input type="radio" class="form-check-input" value="Connection" [(ngModel)]="assetregisterbookform.connection" />Connection</label>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input" value="yes" [(ngModel)]="assetregisterbookform.connection" />Connection</label>
                                         </div>
                                     </div>
                                 </div>
@@ -918,7 +918,7 @@
                                     <div class="col-lg-2 " style="margin-left: 95px"><label class="generated-label">Remark (If any)</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.remarks_network"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.remarks_1"></md-input-container>
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 5px">
@@ -933,7 +933,7 @@
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 190px">
                                         <div class="form-check" style="width: 100%;">
-                                            <label class="form-check-label"><input type="radio" class="form-check-input" value="DC" [(ngModel)]="assetregisterbookform.DC1" />DC</label>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input" value="DC" [(ngModel)]="assetregisterbookform.dc1" />DC</label>
                                         </div>
                                     </div>
                                 </div>
@@ -958,7 +958,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.po_entity' *ngIf="poentity_list" style="display: block;">
-                                            <md-option *ngFor="let poent of poentity_list" value="{{poent}}">{{poent.entityName}}</md-option>
+                                            <md-option *ngFor="let poent of poentity_list" value="{{poent.name}}">{{poent.entityName}}</md-option>
                                         </md-select>
 
                                     </div>
@@ -973,7 +973,7 @@
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.currency' *ngIf="currency_list" style="display: block;">
-                                            <md-option *ngFor="let curr of currency_list" value="{{curr}}">{{curr.currenyName}}</md-option>
+                                            <md-option *ngFor="let curr of currency_list" value="{{curr.currenyname}}">{{curr.currenyname}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -982,8 +982,8 @@
                                     </div>
                                     <div class="col-lg-3 ">
 
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.pofinancialyear' *ngIf="poyear_list" style="display: block;">
-                                            <md-option *ngFor="let fy of po_year" value="{{fy}}">{{fy.name}}</md-option>
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.po_year' *ngIf="poyear_list" style="display: block;">
+                                            <md-option *ngFor="let fy of po_year" value="{{fy.name}}">{{fy.name}}</md-option>
                                         </md-select>
 
                                     </div>
@@ -997,7 +997,7 @@
                                     <div class="col-lg-3 "><label class="generated-label">Other Information (If any)</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: -95px">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.OI2_1"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.ol2_1"></md-input-container>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px"><label class="generated-label">Delivery Date</label>
                                     </div>
@@ -1028,7 +1028,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.bill_entity' *ngIf="billingentity_list" style="display: block;">
-                                            <md-option *ngFor="let billingentity of billingentity_list" value="{{billingentity.name}}">{{billingentity.name}}</md-option>
+                                            <md-option *ngFor="let billingentity of billingentity_list" value="{{billingentity.billname}}">{{billingentity.billname}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -1042,7 +1042,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.inv_currency' *ngIf="currency_list" style="display: block;">
-                                            <md-option *ngFor="let currency of currency_list" value="{{currency.name}}">{{currency.name}}</md-option>
+                                            <md-option *ngFor="let currency of currency_list" value="{{currency.currenyname}}">{{currency.currenyname}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -1051,7 +1051,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.inv_vendor' *ngIf="vendor_list" style="display: block;">
-                                            <md-option *ngFor="let vendor of vendor_list" value="{{vendor.name}}">{{vendor.name}}</md-option>
+                                            <md-option *ngFor="let vendor of vendor_list" value="{{vendor.vendorname}}">{{vendor.vendorname}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Invoice Amount</label>
@@ -1064,7 +1064,7 @@
                                     <div class="col-lg-3 "><label class="generated-label">Other Information (If any)</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: -95px;">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.OI2"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.ol2"></md-input-container>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Installation Date</label>
                                     </div>
@@ -1141,7 +1141,7 @@
                                     <div class="col-lg-3 "><label class="generated-label">Other Information (If Any)</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: -95px;">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.OI1"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.ol1"></md-input-container>
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 37px">
@@ -1149,12 +1149,12 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-input-container style="display: block;">
-                                            <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.AMC_start_date"></md-input-container>
+                                            <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.amc_start_date"></md-input-container>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">AMC Terms</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.AMC_terms"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.amc_terms"></md-input-container>
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 14px">
@@ -1162,7 +1162,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-input-container style="display: block;">
-                                            <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.AMC_end_date"></md-input-container>
+                                            <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.amc_end_date"></md-input-container>
                                     </div>
                                 </div>
 
@@ -1180,7 +1180,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.ins_status' *ngIf="invoi_status_list" style="display: block;">
-                                            <md-option *ngFor="let invoi_status of invoi_status_list" value="{{invoi_status.name}}">{{invoi_status.name}}</md-option>
+                                            <md-option *ngFor="let invoi_status of invoi_status_list" value="{{invoi_status.insuransename}}">{{invoi_status.insuransename}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2" style="margin-left: 190px;"><label class="generated-label">Insured Value</label>
@@ -1215,8 +1215,8 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.ins_renewal' class="null" style="width: 100%;">
-                                            <md-option [value]="YES">YES</md-option>
-                                            <md-option [value]="NO">NO</md-option>
+                                            <md-option value="YES">YES</md-option>
+                                            <md-option value="NO">NO</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -1224,7 +1224,7 @@
                                     <div class="col-lg-2 "><label class="generated-label">Other Information</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.OI1_1"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.ol1_1"></md-input-container>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;"><label class="generated-label">Date Of Communication</label>
                                     </div>
@@ -1245,31 +1245,31 @@
                                     <div class="col-lg-2 "><label class="generated-label">Created By</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.Created_By"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.created_by"></md-input-container>
                                     </div>
                                     <div class="col-lg-1 " style="margin-left: 95px;"><label class="generated-label">CreatedOn</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
                                         <md-input-container style="display: block;">
-                                            <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.Created_On"></md-input-container>
+                                            <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.created_on"></md-input-container>
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 54px">
                                     <div class="col-lg-2 "><label class="generated-label">Last modified By</label>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.EhEditor"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.eheditor"></md-input-container>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Last Modified On</label>
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-input-container style="display: block;">
-                                            <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.EhDate"></md-input-container>
+                                            <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.ehdate"></md-input-container>
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 42px">
                                     <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Operation Name" [(ngModel)]="assetregisterbookform.opm_grp"></md-input-container>
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Operation Name" [(ngModel)]="assetregisterbookform.oprn_grp"></md-input-container>
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 61px">

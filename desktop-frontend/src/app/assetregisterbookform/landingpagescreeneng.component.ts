@@ -33,7 +33,7 @@ export class LandingPageScreenengComponent implements OnInit {
     			field: "cpd",
     		},{
            headerName:"Data transfer limit",
-          field:"Data_Limit"
+          field:"data_limit"
         },{
           headerName:"Payment StartDate  with rental chages",
           field:"payment_start_date",
