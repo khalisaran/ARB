@@ -443,11 +443,19 @@ export class LandingPageScreenengComponent implements OnInit {
           headerName:"AMC terms",
           field:"amc_terms",
         }
-  	],
-          
-    	rowSelection: 'single',
+    ],
+    
+
+      enableFilter: true,
+      enableSorting: true,
+      showToolPanel: true,
+      enableColResize: true,
+      enableStatusBar: true,
+      enableRangeSelection:true,
+      rowSelection: 'single',
     	onRowClicked: function(event) {
-    	//	console.log('a row was clicked'+JSON.stringify(event.node.data));
+      	console.error('on selecting row');
+       // this.router.navigate(['/MainScreeneng']);
         this.assetregisterbookform = event.node.data;
         assetregisterbookformservice.IAssetregisterbookform = this.assetregisterbookform;
         console.log('a row was clickedddd'+JSON.stringify(assetregisterbookformservice.IAssetregisterbookform));
@@ -461,14 +469,13 @@ export class LandingPageScreenengComponent implements OnInit {
     this.get_all_Assetregisterbookform();
   }
 
-  export(){
+  exportcsv(){
     console.log("exporting data")
     var param ={
       fileName: document.querySelector('#fileName')
     }
     this.Table_151GridOptions.api.exportDataAsCsv();
   }
-
    
 
   get_all_Assetregisterbookform(){
@@ -482,5 +489,6 @@ export class LandingPageScreenengComponent implements OnInit {
             this.toastr.error('Check the browser console to see more info.','Error!');
           });
   }
+  
 
 }
