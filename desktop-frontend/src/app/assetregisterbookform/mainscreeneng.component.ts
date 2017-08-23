@@ -410,6 +410,7 @@ get_all_Poentities() {
           .subscribe(data => {
             console.log("assetregisterbookform-=-=-=-=", this.assetregisterbookform);
             this.toastr.success('Success!');
+            this.router.navigate(['\home']);
           },
           error => {
             this.toastr.error('Check the browser console to see more info.','Error!');
@@ -431,6 +432,7 @@ get_all_Poentities() {
           .subscribe(data => {
             console.log("update_Assetregisterbookform");
             this.toastr.success('Success!');
+            this.router.navigate(['\home']);
           },
           error => {
             this.toastr.error('Check the browser console to see more info.','Error!');
