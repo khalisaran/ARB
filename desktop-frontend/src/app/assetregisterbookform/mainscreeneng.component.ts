@@ -265,7 +265,7 @@ export class MainScreenengComponent implements OnInit {
                 location1: '',
                 monitor: '',
                 po_year: '',
-                ip1: '',
+                ip_1: '',
                 date2: '',
                 ios: '',
                 date1: '',

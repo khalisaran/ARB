@@ -1259,9 +1259,9 @@ public class Assetregisterbookform  implements Serializable  {
 
 
 	@ApiModelProperty( value = "Description", required = true )
-@JsonProperty("ip1")
-	@Field("IP1")
- 	private	String ip1;
+@JsonProperty("ip_1")
+	@Field("IP_1")
+ 	private	String ip_1;
 
 
 
@@ -2934,13 +2934,13 @@ public class Assetregisterbookform  implements Serializable  {
 		return po_year;
 	}
 
-	public void setip1(String ip1) {
-		this.ip1 = ip1;
+	public void setip_1(String ip_1) {
+		this.ip_1 = ip_1;
 	}
 
 
-	public String getip1() {
-		return ip1;
+	public String getip_1() {
+		return ip_1;
 	}
 
 	public void setdate2(String date2) {

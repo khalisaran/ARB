@@ -170,7 +170,7 @@ export interface IAssetregisterbookform {
     location1: string;
     monitor: string;
     po_year: string;
-    ip1: string;
+    ip_1: string;
     date2: string;
     ios: string;
     date1: string;
