@@ -54,7 +54,7 @@ export interface IAssetregisterbookform {
     disppo_date: string;
     census_remarks: string;
     rack1: string;
-    dact_type: string;
+    dact_type: boolean;
     sg: string;
     identity: string;
     erd: string;
@@ -143,7 +143,7 @@ export interface IAssetregisterbookform {
     speed: string;
     wty_start_date: string;
     disperd: string;
-    printer_type: string;
+    printer_type: boolean;
     ol2: string;
     ram1: string;
     ol1: string;
@@ -168,7 +168,7 @@ export interface IAssetregisterbookform {
     adaptor: string;
     purpose: string;
     location1: string;
-    monitor: string;
+    monitor: boolean;
     po_year: string;
     ip_1: string;
     date2: string;

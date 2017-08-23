@@ -74,9 +74,8 @@
                                 <div class="row" style="padding-top: 50px">
                                     <div class="col-lg-2 "><label class="generated-label">Fixed cost</label>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container style="display: block;">
-                                            <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.fc"></md-input-container>
+                                    <div class="col-lg-3">
+                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.fc"></md-input-container>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 55px"><label class="generated-label">Data Transfer Limit</label>
                                     </div>
@@ -99,7 +98,9 @@
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px;">
                                         <div class="form-check" style="width: 100%;">
-                                            <label class="form-check-label"><input type="radio" class="form-check-input" [(ngModel)]='assetregisterbookform.dact_type' value="yes"/>Radio</label>
+                                          <label class="form-check-label">
+                                            <input type="checkbox" [(ngModel)]="assetregisterbookform.dact_type"/>
+                                          </label>                                          
                                         </div>
                                     </div>
                                 </div>
