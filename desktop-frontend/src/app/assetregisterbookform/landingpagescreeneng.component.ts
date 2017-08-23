@@ -45,7 +45,7 @@ export class LandingPageScreenengComponent implements OnInit {
            field:"fc",
          },{
            headerName:"Rental Plan",
-           field:"Rental"
+           field:"rental"
          },{
            headerName:"Start Date",
            field:"start_date",
@@ -61,7 +61,7 @@ export class LandingPageScreenengComponent implements OnInit {
             field:"dact_type",
           },{
             headerName:"Permanent Deactivation Date",
-            field:"datc_on",
+            field:"dact_on",
           },{
             headerName:"1st Deactivation Date",
             field:"dact_on_1",

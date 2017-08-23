@@ -23,8 +23,8 @@ export class Sg_ScreenengComponent implements OnInit {
   }
 
   ngOnInit() {
-    if(!this.sg.id)
-    	this.mymodalSFU.open();
+   /* if(!this.sg.id)
+    	this.mymodalSFU.open();*/
 
 
   }

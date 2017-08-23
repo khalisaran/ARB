@@ -31,6 +31,8 @@ import { Infra_ownService } from './../infra_own/infra_own.service';
 import { InsuranceStatusService } from './../insurancestatus/insurancestatus.service';
 import { WarrantyStatusService } from './../warrantystatus/warrantystatus.service';
 import { TypeService } from './../type/type.service';
+import { OSService } from './../os/os.service';
+import { SgService } from './../sg/sg.service';
 
 @Component({
     moduleId: module.id,
@@ -65,6 +67,8 @@ export class MainScreenengComponent implements OnInit {
   invoi_status_list:any[];
   warstatus_list:any[];
   type_otherinfo_list:any[];
+  os_list:any[];
+  saferguardinstalled_list :any[];
  
 
   constructor(private router: Router,private route: ActivatedRoute, public toastr: ToastsManager, vcr: ViewContainerRef, private assetregisterbookformservice: AssetregisterbookformService,
@@ -77,7 +81,8 @@ export class MainScreenengComponent implements OnInit {
    private accessoriesservice: AccessoriesService,private allocatedfromservice: AllocatedFromService,
    private buildingorfloorservice: BuildingOrFloorService,private categoryservice: CategoryService,
    private applicationservice: ApplicationService, private srv_admservice: Srv_admService,private srv_ownservice: Srv_ownService, private infra_ownservice: Infra_ownService
-  ,private insurancestatusservice: InsuranceStatusService, private warrantystatusservice: WarrantyStatusService,private typeservice : TypeService ) {
+  ,private insurancestatusservice: InsuranceStatusService, private warrantystatusservice: WarrantyStatusService,private typeservice : TypeService 
+  ,private osservice :OSService,private sgservice : SgService) {
 
     this.toastr.setRootViewContainerRef(vcr);
 	  this.assetregisterbookform = assetregisterbookformservice.IAssetregisterbookform;
@@ -306,7 +311,33 @@ export class MainScreenengComponent implements OnInit {
          this.get_all_InsuranceStatus();
          this.get_all_WarrantyStatus();
          this.get_all_Type();
+         this.get_all_Sg();
+         this.get_all_OS();
     
+  }
+
+ get_all_Sg(){
+      this.sgservice.get_all_Sg()
+          .subscribe(data => {
+            this.saferguardinstalled_list =data;
+            console.log("data", data);
+           // this.toastr.success('Success!');
+          },
+          error => {
+            this.toastr.error('Check the browser console to see more info.','Error!');
+          });
+  }
+
+get_all_OS(){
+      this.osservice.get_all_OS()
+          .subscribe(data => {
+            console.log("data", data);
+            this.os_list = data;
+           // this.toastr.success('Success!');
+          },
+          error => {
+            this.toastr.error('Check the browser console to see more info.','Error!');
+          });
   }
 
 get_all_Type(){

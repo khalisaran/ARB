@@ -253,9 +253,9 @@ public class Assetregisterbookform  implements Serializable  {
 
 
 	@ApiModelProperty( value = "Description", required = true )
-@JsonProperty("new_jobjoiningdate")
-	@Field("new_jobjoiningdate")
- 	private	String new_jobjoiningdate;
+@JsonProperty("new_joiningdate")
+	@Field("new_joiningdate")
+ 	private	String new_joiningdate;
 
 
 
@@ -1643,15 +1643,7 @@ public class Assetregisterbookform  implements Serializable  {
 		return remk;
 	}
 
-	public void setnew_jobjoiningdate(String new_jobjoiningdate) {
-		this.new_jobjoiningdate = new_jobjoiningdate;
-	}
-
-
-	public String getnew_jobjoiningdate() {
-		return new_jobjoiningdate;
-	}
-
+	
 	public void setip(String ip) {
 		this.ip = ip;
 	}
@@ -2021,6 +2013,18 @@ public class Assetregisterbookform  implements Serializable  {
 		return po_ref_no;
 	}
 
+	
+	//new_joiningdate
+	
+	public void setnew_joiningdate(String new_joiningdate) {
+		this.new_joiningdate = new_joiningdate;
+	}
+
+
+	public String getnew_joiningdate() {
+		return new_joiningdate;
+	}
+	
 	public void setfile_no(String file_no) {
 		this.file_no = file_no;
 	}
