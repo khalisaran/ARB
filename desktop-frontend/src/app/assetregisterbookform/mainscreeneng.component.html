@@ -792,8 +792,8 @@
                                     <div class="col-lg-1 "><label class="generated-label">Type</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px">
-                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.type' *ngIf="srv_adm_list">
-                                            <md-option *ngFor="let srv_adm of srv_adm_list" value="{{srv_adm.name}}">{{srv_adm.name}}</md-option>
+                                        <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.type' *ngIf="type_otherinfo_list">
+                                            <md-option *ngFor="let type_info of type_otherinfo_list" value="{{type_info.name}}">{{type_info.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px"><label class="generated-label">Server Owner</label>
@@ -814,7 +814,7 @@
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.infra_own' *ngIf="infra_own_list">
-                                            <md-option *ngFor="let infra_own of infra_own_list" value="{{infra_own_list.name}}">{{infra_own_list.name}}</md-option>
+                                            <md-option *ngFor="let infra_own of infra_own_list" value="{{infra_own.name}}">{{infra_own.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>

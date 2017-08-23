@@ -30,6 +30,7 @@ import { Srv_ownService } from './../srv_own/srv_own.service';
 import { Infra_ownService } from './../infra_own/infra_own.service';
 import { InsuranceStatusService } from './../insurancestatus/insurancestatus.service';
 import { WarrantyStatusService } from './../warrantystatus/warrantystatus.service';
+import { TypeService } from './../type/type.service';
 
 @Component({
     moduleId: module.id,
@@ -63,6 +64,7 @@ export class MainScreenengComponent implements OnInit {
   vendor_list:any[];
   invoi_status_list:any[];
   warstatus_list:any[];
+  type_otherinfo_list:any[];
  
 
   constructor(private router: Router,private route: ActivatedRoute, public toastr: ToastsManager, vcr: ViewContainerRef, private assetregisterbookformservice: AssetregisterbookformService,
@@ -75,7 +77,7 @@ export class MainScreenengComponent implements OnInit {
    private accessoriesservice: AccessoriesService,private allocatedfromservice: AllocatedFromService,
    private buildingorfloorservice: BuildingOrFloorService,private categoryservice: CategoryService,
    private applicationservice: ApplicationService, private srv_admservice: Srv_admService,private srv_ownservice: Srv_ownService, private infra_ownservice: Infra_ownService
-  ,private insurancestatusservice: InsuranceStatusService, private warrantystatusservice: WarrantyStatusService) {
+  ,private insurancestatusservice: InsuranceStatusService, private warrantystatusservice: WarrantyStatusService,private typeservice : TypeService ) {
 
     this.toastr.setRootViewContainerRef(vcr);
 	  this.assetregisterbookform = assetregisterbookformservice.IAssetregisterbookform;
@@ -303,7 +305,20 @@ export class MainScreenengComponent implements OnInit {
          this.get_all_InvoiceVendor();
          this.get_all_InsuranceStatus();
          this.get_all_WarrantyStatus();
+         this.get_all_Type();
     
+  }
+
+get_all_Type(){
+      this.typeservice.get_all_Type()
+          .subscribe(data => {
+            console.log("data", data);
+             this.type_otherinfo_list = data;
+            
+          },
+          error => {
+            this.toastr.error('Check the browser console to see more info.','Error!');
+          });
   }
 
   get_all_Srv_own(){

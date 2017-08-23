@@ -41,6 +41,7 @@ import { InsuranceStatusModule } from './insurancestatus/insurancestatus.module'
 import { UserAllocationStatusModule } from './userallocationstatus/userallocationstatus.module';
 import { UsedUsModule } from './usedus/usedus.module';
 import { SgModule } from './sg/sg.module';
+import { TypeModule } from './type/type.module';
 import { Srv_admModule } from './srv_adm/srv_adm.module';
 import { Srv_ownModule } from './srv_own/srv_own.module';
 import { Infra_ownModule } from './infra_own/infra_own.module';
@@ -94,7 +95,8 @@ UsedUsModule,
 SgModule,
 Srv_admModule,
 Srv_ownModule,
-Infra_ownModule
+Infra_ownModule,
+TypeModule
   ],
   providers: [
     SharedService,
