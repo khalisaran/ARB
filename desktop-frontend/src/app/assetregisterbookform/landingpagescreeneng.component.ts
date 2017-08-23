@@ -12,7 +12,8 @@ import { IAssetregisterbookform } from './assetregisterbookform';
 })
 export class LandingPageScreenengComponent implements OnInit {
   private assetregisterbookform: IAssetregisterbookform;
-  
+  selectedRowData:any[];
+
    private Table_151GridOptions: GridOptions;
    private array_Assetregisterbookform :any[];
   constructor(private router: Router, public toastr: ToastsManager, vcr: ViewContainerRef, private assetregisterbookformservice: AssetregisterbookformService) { 
@@ -488,6 +489,45 @@ export class LandingPageScreenengComponent implements OnInit {
     }
     this.Table_151GridOptions.api.exportDataAsCsv();
   }
+
+  onRemoveSelected() {
+    console.log("removing data")
+    this.selectedRowData = this.Table_151GridOptions.api.getSelectedRows();
+    //console.error("selected row data------>"+JSON.stringify(this.selectedRowData));
+    for(var i =0; i<this.selectedRowData.length; i++){
+      var datatodeletd = this.selectedRowData[i];
+     // console.log("data to delete----->"+JSON.stringify(datatodeletd))
+      this.delete_Assetregisterbookform(datatodeletd);
+    }
+  }
+
+  delete_Assetregisterbookform(delassetregisterbookform){
+    console.log("deleting data "+delassetregisterbookform.id)
+    this.assetregisterbookformservice.delete_Assetregisterbookform(delassetregisterbookform)
+        .subscribe(data => {
+          console.log("data", data);
+          this.toastr.success('Success!');
+          this.get_all_Assetregisterbookform();
+      //   this.scrambleAndRefreshAll();
+        },
+        error => {
+          this.toastr.error('Check the browser console to see more info.','Error!');
+        });
+}
+
+// scrambleAndRefreshAll() {
+//   this.scramble();
+//   var params = {
+//       force: isForceRefreshSelected()
+//   };
+//   this.Table_151GridOptions.api.refreshCells(params);
+// }
+
+// scramble() {
+//   rowData.forEach(scrambleItem);
+//   topRowData.forEach(scrambleItem);
+//   bottomRowData.forEach(scrambleItem);
+// }
    
 
   get_all_Assetregisterbookform(){
