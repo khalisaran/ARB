@@ -302,9 +302,9 @@ public class Assetregisterbookform  implements Serializable  {
 
 
 	@ApiModelProperty( value = "Description", required = true )
-@JsonProperty("usedus")
-	@Field("usedus")
- 	private	String usedus;
+@JsonProperty("usedas")
+	@Field("usedas")
+ 	private	String usedas;
 
 
 
@@ -1689,13 +1689,13 @@ public class Assetregisterbookform  implements Serializable  {
 		return ar;
 	}
 
-	public void setusedus(String usedus) {
-		this.usedus = usedus;
+	public void setusedas(String usedas) {
+		this.usedas = usedas;
 	}
 
 
-	public String getusedus() {
-		return usedus;
+	public String getusedas() {
+		return usedas;
 	}
 
 	public void setnew_designation(String new_designation) {

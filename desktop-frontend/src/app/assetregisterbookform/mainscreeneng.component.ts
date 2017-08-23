@@ -128,7 +128,7 @@ export class MainScreenengComponent implements OnInit {
                 ram_initial: '',
                 new_jobtype: '',
                 ar: '',
-                usedus: '',
+                usedas: '',
                 new_designation: '',
                 new_los: '',
                 inv_date: '',
@@ -220,7 +220,6 @@ export class MainScreenengComponent implements OnInit {
                 seat_number: '',
                 inv_vendor: '',
                 eheditor: '',
-                _class: '',
                 engineer_1: '',
                 fc: '',
                 connection: '',
@@ -320,7 +319,7 @@ export class MainScreenengComponent implements OnInit {
       this.sgservice.get_all_Sg()
           .subscribe(data => {
             this.saferguardinstalled_list =data;
-            console.log("data", data);
+            console.log("sgservice");
            // this.toastr.success('Success!');
           },
           error => {
@@ -331,7 +330,7 @@ export class MainScreenengComponent implements OnInit {
 get_all_OS(){
       this.osservice.get_all_OS()
           .subscribe(data => {
-            console.log("data", data);
+            console.log("osservice");
             this.os_list = data;
            // this.toastr.success('Success!');
           },
@@ -343,7 +342,7 @@ get_all_OS(){
 get_all_Type(){
       this.typeservice.get_all_Type()
           .subscribe(data => {
-            console.log("data", data);
+            console.log("typeservice");
              this.type_otherinfo_list = data;
             
           },
@@ -355,7 +354,7 @@ get_all_Type(){
   get_all_Srv_own(){
     this.srv_ownservice.get_all_Srv_own()
         .subscribe(data => {
-          console.log("data", data);
+          console.log("srv_ownservice");
           this.srv_own_list = data;
         //  this.toastr.success('Success!');
         },
@@ -367,7 +366,7 @@ get_all_Type(){
    get_all_Srv_adm(){
      this.srv_admservice.get_all_Srv_adm()
          .subscribe(data => {
-           console.log("data", data);
+           console.log("srv_admservice");
            this.srv_adm_list = data;
           // this.toastr.success('Success!');
          },
@@ -379,7 +378,7 @@ get_all_Type(){
  get_all_Poyears() {
 	 console.log("calling get_all_Poyears")
         this.poyrservice.get_all_Poyear().subscribe(data => {
-          console.log('data'+JSON.stringify(data));      
+        //  console.log('data'+JSON.stringify(data));      
             this.poyear_list = data;
           },
           err => {
@@ -390,7 +389,7 @@ get_all_Type(){
 
  get_all_Currencies() {
         this.currencyService.get_all_Currency().subscribe(data => {
-            console.log('data'+JSON.stringify(data));                       
+            console.log('currencyService');                       
             this.currency_list = data;
           },
           err => {
@@ -409,7 +408,7 @@ get_all_Poentities() {
  create_Assetregisterbookform(){
       this.assetregisterbookformservice.create_Assetregisterbookform(this.assetregisterbookform)
           .subscribe(data => {
-            console.log("data", data);
+            console.log("assetregisterbookform");
             this.toastr.success('Success!');
           },
           error => {
@@ -419,7 +418,7 @@ get_all_Poentities() {
   get_all_Assetregisterbookform(){
       this.assetregisterbookformservice.get_all_Assetregisterbookform()
           .subscribe(data => {
-            console.log("data", data);
+            console.log("get_all_Assetregisterbookform");
             this.toastr.success('Success!');
           },
           error => {
@@ -430,7 +429,7 @@ get_all_Poentities() {
     //alert(this.assetregisterbookform.monitor);
       this.assetregisterbookformservice.update_Assetregisterbookform(this.assetregisterbookform)
           .subscribe(data => {
-            console.log("data", data);
+            console.log("update_Assetregisterbookform");
             this.toastr.success('Success!');
           },
           error => {
@@ -441,7 +440,7 @@ get_all_Poentities() {
      // this.mymodalSFU.close();
       this.assetregisterbookformservice.search_for_update_Assetregisterbookform(this.assetregisterbookform.id)
           .subscribe(data => {
-            console.log("data", data);
+            console.log("search_for_update_Assetregisterbookform");
             this.toastr.success('Success!');
             this.assetregisterbookform = data
           },
@@ -452,7 +451,7 @@ get_all_Poentities() {
   delete_Assetregisterbookform(){
       this.assetregisterbookformservice.delete_Assetregisterbookform(this.assetregisterbookform)
           .subscribe(data => {
-            console.log("data", data);
+            console.log("delete_Assetregisterbookform");
             this.toastr.success('Success!');
           },
           error => {
@@ -462,7 +461,7 @@ get_all_Poentities() {
 
   get_all_UserallocationStatus() {
         this.userAllocationService.get_all_UserAllocationStatus().subscribe(data => {
-          console.log('userall'+JSON.stringify(data));      
+          console.log('get_all_UserallocationStatus');      
             this.user_allocation_status_list = data;
           },
           err => {
@@ -472,7 +471,7 @@ get_all_Poentities() {
 
   get_all_Usedas() {
         this.usedusservice.get_all_UsedUs().subscribe(data => {
-          console.log('usedas'+JSON.stringify(data));      
+          console.log('get_all_Usedas');      
             this.usedas_list = data;
           },
           err => {
@@ -483,7 +482,7 @@ get_all_Poentities() {
     get_all_RentalPlan(){
       this.rentalplanservice.get_all_RentalPlan()
           .subscribe(data => {
-            console.log("data", data);
+            console.log("get_all_RentalPlan");
             this.rentalplan_list = data;
            // this.toastr.success('Success!');
           },

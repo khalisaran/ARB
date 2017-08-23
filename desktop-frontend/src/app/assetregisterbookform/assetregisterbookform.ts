@@ -33,7 +33,7 @@ export interface IAssetregisterbookform {
     ram_initial: string;
     new_jobtype: string;
     ar: string;
-    usedus: string;
+    usedas: string;
     new_designation: string;
     new_los: string;
     inv_date: string;
@@ -125,7 +125,6 @@ export interface IAssetregisterbookform {
     seat_number: string;
     inv_vendor: string;
     eheditor: string;
-    _class: string;
     engineer_1: string;
     fc: string;
     connection: string;
