@@ -185,7 +185,7 @@ export class MainScreenengComponent implements OnInit {
                 ins_status: '',
                 mode: '',
                 acce_1: '',
-                dc1: '',
+                dc1: false,
                 pin: '',
                 doa1: '',
                 cpd: '',
@@ -196,10 +196,10 @@ export class MainScreenengComponent implements OnInit {
                 oprn_grp: '',
                 srv_own: '',
                 syssteward: '',
-                hyper: '',
+                hyper: false,
                 asset_number: '',
                 ddate: '',
-                type2: '',
+                type2: false,
                 created_on: '',
                 last: '',
                 dispdoa1: '',
@@ -222,7 +222,7 @@ export class MainScreenengComponent implements OnInit {
                 eheditor: '',
                 engineer_1: '',
                 fc: '',
-                connection: '',
+                connection: false,
                 inv_no: '',
                 catrige_no: '',
                 collected_from: '',
@@ -408,7 +408,7 @@ get_all_Poentities() {
  create_Assetregisterbookform(){
       this.assetregisterbookformservice.create_Assetregisterbookform(this.assetregisterbookform)
           .subscribe(data => {
-            console.log("assetregisterbookform");
+            console.log("assetregisterbookform-=-=-=-=", this.assetregisterbookform);
             this.toastr.success('Success!');
           },
           error => {

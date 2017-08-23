@@ -872,7 +872,9 @@
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px">
                                         <div class="form-check" style="width: 100%;">
-                                            <label class="form-check-label"><input type="radio" class="form-check-input" value="Type2" [(ngModel)]="assetregisterbookform.type2" />Type2</label>
+                                          <label class="form-check-label">
+                                            <input type="checkbox" [(ngModel)]="assetregisterbookform.type2"/>
+                                          </label>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px"><label class="generated-label">Network category (VLAN)</label>
@@ -886,7 +888,9 @@
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px">
                                         <div class="form-check" style="width: 100%;">
-                                            <label class="form-check-label"><input type="radio" class="form-check-input" value="yes" [(ngModel)]="assetregisterbookform.hyper" />hyper</label>
+                                          <label class="form-check-label">
+                                            <input type="checkbox" [(ngModel)]="assetregisterbookform.hyper"/>
+                                          </label>
                                         </div>
                                     </div>
                                 </div>
@@ -902,7 +906,9 @@
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 190px">
                                         <div class="form-check" style="width: 100%;">
-                                            <label class="form-check-label"><input type="radio" class="form-check-input" value="yes" [(ngModel)]="assetregisterbookform.connection" />Connection</label>
+                                          <label class="form-check-label">
+                                            <input type="checkbox" [(ngModel)]="assetregisterbookform.connection"/>
+                                          </label>
                                         </div>
                                     </div>
                                 </div>
@@ -930,11 +936,12 @@
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 190px">
                                         <div class="form-check" style="width: 100%;">
-                                            <label class="form-check-label"><input type="radio" class="form-check-input" value="DC" [(ngModel)]="assetregisterbookform.dc1" />DC</label>
+                                          <label class="form-check-label">
+                                            <input type="checkbox" [(ngModel)]="assetregisterbookform.dc1"/>
+                                          </label>                                          
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </section>
                     </tab>

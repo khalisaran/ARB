@@ -90,7 +90,7 @@ export interface IAssetregisterbookform {
     ins_status: string;
     mode: string;
     acce_1: string;
-    dc1: string;
+    dc1: boolean; 
     pin: string;
     doa1: string;
     cpd: string;
@@ -101,10 +101,10 @@ export interface IAssetregisterbookform {
     oprn_grp: string;
     srv_own: string;
     syssteward: string;
-    hyper: string;
+    hyper: boolean;
     asset_number: string;
     ddate: string;
-    type2: string;
+    type2: boolean;
     created_on: string;
     last: string;
     dispdoa1: string;
@@ -127,7 +127,7 @@ export interface IAssetregisterbookform {
     eheditor: string;
     engineer_1: string;
     fc: string;
-    connection: string;
+    connection: boolean;
     inv_no: string;
     catrige_no: string;
     collected_from: string;
