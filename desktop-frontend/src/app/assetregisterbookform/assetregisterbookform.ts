@@ -70,7 +70,7 @@ export interface IAssetregisterbookform {
     po_ref_no: string;
     file_no: string;
     amc_end_date: string;
-    diswty_end_date: string;
+    dispwty_end_date: string;
     new_gender: string;
     dispins_expiry_date: string;
     dat: string;
@@ -84,7 +84,7 @@ export interface IAssetregisterbookform {
     census_count: string;
     ehdate: string;
     office: string;
-    disinv_date: string;
+    dispinv_date: string;
     bill_entity: string;
     model_no: string;
     ins_status: string;

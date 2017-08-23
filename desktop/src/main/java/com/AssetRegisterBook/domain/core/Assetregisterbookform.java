@@ -218,9 +218,9 @@ public class Assetregisterbookform  implements Serializable  {
 
 
 	@ApiModelProperty( value = "Description", required = true )
-@JsonProperty("diswty_start_date")
-	@Field("diswty_start_date")
- 	private	String diswty_start_date;
+@JsonProperty("dispwty_start_date")
+	@Field("dispwty_start_date")
+ 	private	String dispwty_start_date;
 
 
 
@@ -561,9 +561,9 @@ public class Assetregisterbookform  implements Serializable  {
 
 
 	@ApiModelProperty( value = "Description", required = true )
-@JsonProperty("diswty_end_date")
-	@Field("diswty_end_date")
- 	private	String diswty_end_date;
+@JsonProperty("dispwty_end_date")
+	@Field("dispwty_end_date")
+ 	private	String dispwty_end_date;
 
 
 
@@ -659,9 +659,9 @@ public class Assetregisterbookform  implements Serializable  {
 
 
 	@ApiModelProperty( value = "Description", required = true )
-@JsonProperty("disinv_date")
-	@Field("disinv_date")
- 	private	String disinv_date;
+@JsonProperty("dispinv_date")
+	@Field("dispinv_date")
+ 	private	String dispinv_date;
 
 
 
@@ -1589,13 +1589,13 @@ public class Assetregisterbookform  implements Serializable  {
 		return per;
 	}
 
-	public void setdiswty_start_date(String diswty_start_date) {
-		this.diswty_start_date = diswty_start_date;
+	public void setdispwty_start_date(String dispwty_start_date) {
+		this.dispwty_start_date = dispwty_start_date;
 	}
 
 
-	public String getdiswty_start_date() {
-		return diswty_start_date;
+	public String getdispwty_start_date() {
+		return dispwty_start_date;
 	}
 
 	public void setnew_email(String new_email) {
@@ -2034,13 +2034,13 @@ public class Assetregisterbookform  implements Serializable  {
 		return amc_end_date;
 	}
 
-	public void setdiswty_end_date(String diswty_end_date) {
-		this.diswty_end_date = diswty_end_date;
+	public void setdispwty_end_date(String dispwty_end_date) {
+		this.dispwty_end_date = dispwty_end_date;
 	}
 
 
-	public String getdiswty_end_date() {
-		return diswty_end_date;
+	public String getdispwty_end_date() {
+		return dispwty_end_date;
 	}
 
 	public void setnew_gender(String new_gender) {
@@ -2160,13 +2160,13 @@ public class Assetregisterbookform  implements Serializable  {
 		return office;
 	}
 
-	public void setdisinv_date(String disinv_date) {
-		this.disinv_date = disinv_date;
+	public void setdispinv_date(String dispinv_date) {
+		this.dispinv_date = dispinv_date;
 	}
 
 
-	public String getdisinv_date() {
-		return disinv_date;
+	public String getdispinv_date() {
+		return dispinv_date;
 	}
 
 	public void setbill_entity(String bill_entity) {
