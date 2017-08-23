@@ -494,7 +494,7 @@ export class LandingPageScreenengComponent implements OnInit {
 
   onRemoveSelected() {
     console.log("removing data")
-    this.router.navigate(['/MainScreeneng']);
+    //this.router.navigate(['/MainScreeneng']); 
     this.selectedRowData = this.Table_151GridOptions.api.getSelectedRows();
     //console.error("selected row data------>"+JSON.stringify(this.selectedRowData));
     for(var i =0; i<this.selectedRowData.length; i++){
