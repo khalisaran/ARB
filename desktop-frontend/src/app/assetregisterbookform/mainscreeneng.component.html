@@ -364,7 +364,7 @@
                                     <div class="col-lg-2 "><label class="generated-label">Monitor Type</label>
                                     </div>
                                     <div class="col-lg-2 ">
-                                       <!-- <md-checkbox color="primary" [(ngModel)]="assetregisterbookform.monitor" ngDefaultControl>Checkbox Label
+                                        <!-- <md-checkbox color="primary" [(ngModel)]="assetregisterbookform.monitor" ngDefaultControl>Checkbox Label
                                         </md-checkbox>-->
                                         <input type="checkbox" [(ngModel)]="assetregisterbookform.monitor"/>
                                     </div>
@@ -376,6 +376,7 @@
                                         <!--<md-checkbox color="primary" [(ngModel)]="assetregisterbookform.printer_type" ngDefaultControl>Checkbox Label
                                         </md-checkbox>-->
                                         <input type="checkbox" [(ngModel)]="assetregisterbookform.printer_type"/>
+
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 35px">
@@ -494,7 +495,7 @@
                                     <div class="col-lg-3 ">
                                         <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.new_entity"></md-input-container>
                                     </div>
-                                    <div class="col-lg-2 "><label class="generated-label">LNID
+                                    <div class="col-lg-2 " style="margin-left: 95px"><label class="generated-label">LNID
                                         (For Contract Staff & PM Staff)</label>
                                     </div>
                                     <div class="col-lg-3 ">
@@ -508,15 +509,9 @@
                     <tab heading='Other Information'>
 
                         <section>
-                            <h3 style="margin-top: -35px; margin-left: 40px;"><b>CENSUS INFORMATION</b></h3>
+                            <h3 style="margin-top: -35px; margin-left: 40px;"><b>For Census Jan 2009 Only</b></h3>
                             <div class="container" style="margin-top: 30px;">
                                 <div class="row">
-                                    <div class="col-lg-3 "><label class="generated-label">Other Information</label>
-                                    </div>
-                                    <div class="col-lg-4 "><label class="generated-label">For Census Jan 2009 Only</label>
-                                    </div>
-                                </div>
-                                <div class="row" style="padding-top: 40px">
                                     <div class="col-lg-2 "><label class="generated-label">Counted for Census ?</label>
                                     </div>
                                     <div class="col-lg-3 ">
@@ -782,7 +777,7 @@
                                     <div class="col-lg-3 ">
                                         <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.sp"></md-input-container>
                                     </div>
-                                    <div class="col-lg-3 " style="margin-left: 95px"><label class="generated-label">Server Administrator</label>
+                                    <div class="col-lg-3 "><label class="generated-label">Server Administrator</label>
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.srv_adm' *ngIf="srv_adm_list">
@@ -798,7 +793,7 @@
                                             <md-option *ngFor="let type_info of type_otherinfo_list" value="{{type_info.name}}">{{type_info.name}}</md-option>
                                         </md-select>
                                     </div>
-                                    <div class="col-lg-2 " style="margin-left: 95px"><label class="generated-label">Server Owner</label>
+                                    <div class="col-lg-2 " ><label class="generated-label">Server Owner</label>
                                     </div>
                                     <div class="col-lg-3 " style="margin-left: 95px">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.srv_own' *ngIf="srv_own_list">
@@ -812,7 +807,7 @@
                                     <div class="col-lg-3 ">
                                         <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.h_type"></md-input-container>
                                     </div>
-                                    <div class="col-lg-3 " style="margin-left: 95px"><label class="generated-label">Infrastructure Owner</label>
+                                    <div class="col-lg-3 " ><label class="generated-label">Infrastructure Owner</label>
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.infra_own' *ngIf="infra_own_list">
@@ -826,7 +821,7 @@
                                     <div class="col-lg-3 ">
                                         <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.office"></md-input-container>
                                     </div>
-                                    <div class="col-lg-3 " style="margin-left: 95px"><label class="generated-label">System Steward</label>
+                                    <div class="col-lg-3 "><label class="generated-label">System Steward</label>
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.syssteward"></md-input-container>
@@ -838,14 +833,14 @@
                                     <div class="col-lg-3 ">
                                         <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.rack"></md-input-container>
                                     </div>
-                                    <div class="col-lg-4 " style="margin-left: 95px"><label class="generated-label">Date Of Assignment of the server</label>
+                                    <div class="col-lg-4 "><label class="generated-label">Date Of Assignment of the server</label>
                                     </div>
-                                    <div class="col-lg-3 " style="margin-left: -95px">
-                                        <md-input-container style="display: block">
+                                    <div class="col-lg-2" style="margin-left: -95px">
+                                        <md-input-container>
                                             <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.doa1"></md-input-container>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispdoa1"></md-input-container>
+                                    <div class="col-lg-2">
+                                        <md-input-container class="" style="width: 75%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispdoa1"></md-input-container>
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 69px">
@@ -854,14 +849,14 @@
                                     <div class="col-lg-3 ">
                                         <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.shelf"></md-input-container>
                                     </div>
-                                    <div class="col-lg-3 " style="margin-left: 95px"><label class="generated-label">Expected Release date</label>
+                                    <div class="col-lg-3 "><label class="generated-label">Expected Release date</label>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container style="display: block">
+                                    <div class="col-lg-2">
+                                        <md-input-container>
                                             <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.erd"></md-input-container>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.disperd"></md-input-container>
+                                    <div class="col-lg-2">
+                                        <md-input-container class="" style="width: 75%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.disperd"></md-input-container>
                                     </div>
                                 </div>
 
@@ -949,14 +944,14 @@
                                 <div class="row">
                                     <div class="col-lg-2 "><label class="generated-label">Po Date</label>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container style="display: block;">
+                                    <div class="col-lg-2">
+                                        <md-input-container>
                                             <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.po_date"></md-input-container>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.disppo_date"></md-input-container>
+                                        <md-input-container class="" style="width: 50%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.disppo_date"></md-input-container>
                                     </div>
-                                    <div class="col-lg-2 " style="margin-left: 95px"><label class="generated-label">Po Entity</label>
+                                    <div class="col-lg-2 " style="margin-left: -95px"><label class="generated-label">Po Entity</label>
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.po_entity' *ngIf="poentity_list" style="display: block;">
@@ -1019,14 +1014,14 @@
                                 <div class="row">
                                     <div class="col-lg-2 "><label class="generated-label">Invoice Date</label>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container style="display: block;">
+                                    <div class="col-lg-2">
+                                        <md-input-container>
                                             <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.inv_date"></md-input-container>
                                     </div>
-                                    <div class="col-lg-3 " style="margin-left: -95px">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispinv_date"></md-input-container>
+                                    <div class="col-lg-3 ">
+                                        <md-input-container class="" style="width: 50%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispinv_date"></md-input-container>
                                     </div>
-                                    <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Billing Entity</label>
+                                    <div class="col-lg-2 " style="margin-left: -95px;"><label class="generated-label">Billing Entity</label>
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-select placeholder="Select" [(ngModel)]='assetregisterbookform.bill_entity' *ngIf="billingentity_list" style="display: block;">
@@ -1070,12 +1065,12 @@
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Installation Date</label>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container style="display: block;">
+                                    <div class="col-lg-2">
+                                        <md-input-container>
                                             <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.inst_date"></md-input-container>
                                     </div>
-                                    <div class="col-lg-3 " style="margin-left: -95px;">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispinst_date"></md-input-container>
+                                    <div class="col-lg-2">
+                                        <md-input-container class="" style="width: 75%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispinst_date"></md-input-container>
                                     </div>
                                 </div>
 
@@ -1103,14 +1098,14 @@
                                 <div class="row" style="padding-top: 25px">
                                     <div class="col-lg-2 "><label class="generated-label">Start Date</label>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container style="display: block;">
+                                    <div class="col-lg-2">
+                                        <md-input-container>
                                             <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.wty_start_date"></md-input-container>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispwty_start_date"></md-input-container>
+                                    <div class="col-lg-3">
+                                        <md-input-container class="" style="width: 50%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispwty_start_date"></md-input-container>
                                     </div>
-                                    <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Terms</label>
+                                    <div class="col-lg-2 " style="margin-left: -95px;"><label class="generated-label">Terms</label>
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.wty_terms"></md-input-container>
@@ -1119,14 +1114,14 @@
                                 <div class="row" style="padding-top: 26px">
                                     <div class="col-lg-2 "><label class="generated-label">End Date</label>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container style="display: block;">
+                                    <div class="col-lg-2">
+                                        <md-input-container>
                                             <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.wty_end_date"></md-input-container>
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispwty_end_date"></md-input-container>
+                                        <md-input-container class="" style="width: 50%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispwty_end_date"></md-input-container>
                                     </div>
-                                    <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">GST File No.</label>
+                                    <div class="col-lg-2 " style="margin-left: -95px;"><label class="generated-label">GST File No.</label>
                                     </div>
                                     <div class="col-lg-3 ">
                                         <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.file_no"></md-input-container>
@@ -1199,12 +1194,12 @@
                                     </div>
                                     <div class="col-lg-2 " style="margin-left: 95px;"><label class="generated-label">Policy End Date</label>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container style="display: block;">
+                                    <div class="col-lg-2">
+                                        <md-input-container>
                                             <input mdInput placeholder="Date" type="date" style="width: 100%;" [(ngModel)]="assetregisterbookform.ins_expiry_date"></md-input-container>
                                     </div>
-                                    <div class="col-lg-3 ">
-                                        <md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispins_expiry_date"></md-input-container>
+                                    <div class="col-lg-2">
+                                        <md-input-container class="" style="width: 75%;"><input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.dispins_expiry_date"></md-input-container>
                                     </div>
                                 </div>
                                 <div class="row" style="padding-top: 46px">
