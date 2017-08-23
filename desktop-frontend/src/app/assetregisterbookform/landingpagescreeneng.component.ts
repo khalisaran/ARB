@@ -445,7 +445,11 @@ export class LandingPageScreenengComponent implements OnInit {
         }
     ],
     
-
+    defaultColDef: {
+      width: 100,
+      headerCheckboxSelection: this.isFirstColumn,
+      checkboxSelection: this.isFirstColumn
+  },
       enableFilter: true,
       enableSorting: true,
       showToolPanel: true,
@@ -453,9 +457,12 @@ export class LandingPageScreenengComponent implements OnInit {
       enableStatusBar: true,
       enableRangeSelection:true,
       rowSelection: 'single',
+      groupSelectsChildren: true,
+      suppressRowClickSelection: true,
+      
     	onRowClicked: function(event) {
       	console.error('on selecting row');
-       // this.router.navigate(['/MainScreeneng']);
+        this.router.navigate(['/MainScreeneng']);
         this.assetregisterbookform = event.node.data;
         assetregisterbookformservice.IAssetregisterbookform = this.assetregisterbookform;
         console.log('a row was clickedddd'+JSON.stringify(assetregisterbookformservice.IAssetregisterbookform));
@@ -469,6 +476,11 @@ export class LandingPageScreenengComponent implements OnInit {
     this.get_all_Assetregisterbookform();
   }
 
+  isFirstColumn(params){
+    var displayedColumns = params.columnApi.getAllDisplayedColumns();
+    var thisIsFirstColumn = displayedColumns[0] === params.column;
+    return thisIsFirstColumn;
+  }
   exportcsv(){
     console.log("exporting data")
     var param ={
