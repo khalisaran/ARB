@@ -396,6 +396,7 @@ get_all_Poentities() {
           });
   }
   update_Assetregisterbookform(){
+    //alert(this.assetregisterbookform.monitor);
       this.assetregisterbookformservice.update_Assetregisterbookform(this.assetregisterbookform)
           .subscribe(data => {
             console.log("data", data);
