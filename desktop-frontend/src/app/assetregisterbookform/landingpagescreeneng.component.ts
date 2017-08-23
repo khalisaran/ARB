@@ -152,10 +152,10 @@ export class LandingPageScreenengComponent implements OnInit {
           },{//purchase Order Details
             headerName:"PO Date",
             field:"po_date"
-          },{
+          }/*,{
             headerName:"PO Display Date",
             field:"disppo_date",
-          },{
+          }*/,{
             headerName:"PO Ref. No.",
             field:"po_ref_no",
           },{
@@ -194,16 +194,16 @@ export class LandingPageScreenengComponent implements OnInit {
           },{
             headerName:"Invoice Currency",
             field:"inv_currency",
-          },{
+          },/*{
             headerName:"Invoice Amount",
             field:"inv_amount",
-          },{
+          },*/{
             headerName:"Installation Date",
             field:"inst_date",
-          },{
+          },/*,{
             headerName:"Installation Display Date",
             field:"dispinst_date",
-          },{//Insurance Details
+          },*/{//Insurance Details
             headerName:"Insurance Status",
             field:"ins_status",
           },{
@@ -221,10 +221,10 @@ export class LandingPageScreenengComponent implements OnInit {
           },{
             headerName:"Policy End Date",
             field:"ins_expiry_date",
-          },{
+          },/*,{
             headerName:"Policy End Display Date",
             field:"dispins_expiry_date",
-          },{
+          },*/{
             headerName:"Renewal Required?",
             field:"ins_renewal",
           },{
@@ -319,10 +319,10 @@ export class LandingPageScreenengComponent implements OnInit {
         },{
           headerName:"I.P.Address",
           field:"ip",
-        },{
+        },/*{
           headerName:"I.P.Address display",
           field:"ip_1",
-        },{
+        },*/{
           headerName:"OS",
           field:"os",
         },{
@@ -336,7 +336,7 @@ export class LandingPageScreenengComponent implements OnInit {
           field:"h_type",
         },{
           headerName:"Category",
-          field:"catagory",
+          field:"category",
         },{
           headerName:"Application",
           field:"application1",
@@ -409,16 +409,16 @@ export class LandingPageScreenengComponent implements OnInit {
         },{
           headerName:"Start Date",
           field:"wty_start_date",
-        },{
+        }/*,{
           headerName:"Display Start Date",
           field:"dispwty_start_date",
-        },{
+        }*/,{
           headerName:"End Date",
           field:"wty_end_date",
-        },{
+        },/*{
           headerName:"Display End date ",
           field:"dispwty_end_date",
-        },{
+        },*/{
           headerName:"Carepack No.",
           field:"carepack",
         },{
