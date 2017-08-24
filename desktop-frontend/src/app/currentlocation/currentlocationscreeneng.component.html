@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 170px">
+        <div class="col-lg-1 col-lg-offset-1"><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-2 col-lg-offset-1"><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="currentlocation.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 65px">
+        <div class="col-lg-1 col-lg-offset-2"><label class="generated-label">Description</label>
+        </div>
+        <div class="col-lg-2 col-lg-offset-1"><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="currentlocation.description"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 41px">
+        <div class="col-lg-2 col-lg-offset-3"><button class="btn btn-primary" (click)="create_CurrentLocation()" style="width: 100%;">Save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 39px">
+        <div class="col-lg-2 col-lg-offset-3"><button class="btn btn-primary" (click)="get_all_CurrentLocation()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+
+    </div>
+</section>

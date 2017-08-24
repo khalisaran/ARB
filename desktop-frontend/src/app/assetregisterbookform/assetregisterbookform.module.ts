@@ -28,6 +28,9 @@ import { TabsModule } from 'ngx-bootstrap';
 import { AgGridModule } from 'ag-grid-angular/main';
 import { AssetregisterbookformService } from './assetregisterbookform.service';
 
+import { ABRScreenengComponent } from './abrscreeneng.component';
+import { Asset_screenOne_2engComponent } from './asset_screenone_2eng.component';
+
 @NgModule({
     declarations: [
         AssetRegisterBookScreenOne_1engComponent,
@@ -47,7 +50,9 @@ import { AssetregisterbookformService } from './assetregisterbookform.service';
         MainScreenengComponent,
         LandingPageScreenengComponent,
         UserAllocationScreenOne_1engComponent,
-        UserAllocationScreenOne_2engComponent
+        UserAllocationScreenOne_2engComponent,
+        ABRScreenengComponent,
+        Asset_screenOne_2engComponent
     ],
     imports: [
         MdInputModule,
@@ -75,7 +80,9 @@ import { AssetregisterbookformService } from './assetregisterbookform.service';
             { path: 'MainScreeneng/:id', component: MainScreenengComponent},
             { path: 'LandingPageScreeneng', component: LandingPageScreenengComponent},
             { path: 'UserAllocationScreenOne_1eng', component: UserAllocationScreenOne_1engComponent},
-            { path: 'UserAllocationScreenOne_2eng', component: UserAllocationScreenOne_2engComponent}
+            { path: 'UserAllocationScreenOne_2eng', component: UserAllocationScreenOne_2engComponent},
+              { path: 'ABRScreeneng', component: ABRScreenengComponent},
+            { path: 'Asset_screenOne_2eng', component: Asset_screenOne_2engComponent}
         ]),
         Ng2Bs3ModalModule,
         BrowserAnimationsModule

@@ -1,0 +1,29 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 55px">
+        <div class="col-lg-4 col-lg-offset-1"><label class="generated-label">Identity Screen</label>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 116px">
+        <div class="col-lg-1 col-lg-offset-1"><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-2 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="identity.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 70px">
+        <div class="col-lg-1 col-lg-offset-1"><label class="generated-label">Description</label>
+        </div>
+        <div class="col-lg-2 "><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="identity.decription"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 69px">
+        <div class="col-lg-2 col-lg-offset-2"><button class="btn btn-primary" (click)="create_Identity()" style="width: 100%;">save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 57px">
+        <div class="col-lg-2 col-lg-offset-2"><button class="btn btn-primary" (click)="get_all_Identity()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+
+    </div>
+</section>

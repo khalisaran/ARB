@@ -45,6 +45,13 @@ import { TypeModule } from './type/type.module';
 import { Srv_admModule } from './srv_adm/srv_adm.module';
 import { Srv_ownModule } from './srv_own/srv_own.module';
 import { Infra_ownModule } from './infra_own/infra_own.module';
+
+import { IdentityModule } from './identity/identity.module';
+import { PurposeModule } from './purpose/purpose.module';
+import { OfficeLocationModule } from './officelocation/officelocation.module';
+import { RoomModule } from './room/room.module';
+import { CurrentLocationModule } from './currentlocation/currentlocation.module';
+
 import { HeaderENComponent } from './header/header-en.component';
 import { HeaderDEComponent } from './header/header-de.component';
 import { FooterENComponent } from './footer/footer-en.component';
@@ -96,7 +103,12 @@ SgModule,
 Srv_admModule,
 Srv_ownModule,
 Infra_ownModule,
-TypeModule
+TypeModule,
+IdentityModule,
+PurposeModule,
+OfficeLocationModule,
+RoomModule,
+CurrentLocationModule
   ],
   providers: [
     SharedService,

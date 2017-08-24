@@ -1,0 +1,29 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 92px">
+        <div class="col-lg-3 col-lg-offset-2"><label class="generated-label">Purpose Screen</label>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 112px">
+        <div class="col-lg-1 col-lg-offset-2"><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-2 col-lg-offset-1"><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="purpose.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 65px">
+        <div class="col-lg-1 col-lg-offset-2"><label class="generated-label">description</label>
+        </div>
+        <div class="col-lg-2 col-lg-offset-1"><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="purpose.description"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 72px">
+        <div class="col-lg-2 col-lg-offset-4"><button class="btn btn-primary" (click)="create_Purpose()" style="width: 100%;">save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 40px">
+        <div class="col-lg-2 col-lg-offset-4"><button class="btn btn-primary" (click)="get_all_Purpose()" style="width: 100%;">getall</button>
+        </div>
+        </div>
+
+    </div>
+</section>

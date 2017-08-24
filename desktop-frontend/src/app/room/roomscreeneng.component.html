@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 155px">
+        <div class="col-lg-1 col-lg-offset-1"><label class="generated-label">Name</label>
+        </div>
+        <div class="col-lg-2 col-lg-offset-1"><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="room.name"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 76px">
+        <div class="col-lg-1 col-lg-offset-1"><label class="generated-label">Description</label>
+        </div>
+        <div class="col-lg-2 col-lg-offset-1"><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="room.descriptoin"></md-input-container>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 58px">
+        <div class="col-lg-2 col-lg-offset-3"><button class="btn btn-primary" (click)="create_Room()" style="width: 100%;">save</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 45px">
+        <div class="col-lg-2 col-lg-offset-3"><button class="btn btn-primary" (click)="get_all_Room()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+
+    </div>
+</section>
