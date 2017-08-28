@@ -8,7 +8,7 @@ import org.apache.log4j.*;
 
 
 
-import com.AssetRegisterBook.domain.core.Assetregisterbookform;
+import com.AssetRegisterBook.domain.core.arb;
 
 import com.AssetRegisterBook.dao.couchbase.AssetregisterbookformDao;
 
@@ -58,13 +58,13 @@ private static Logger log = Logger.getLogger(AssetregisterbookformService.class.
 	*@throws Exception
 	*/
 
-	public Assetregisterbookform create_assetregisterbookform(Assetregisterbookform Assetregisterbookform) throws Exception {
+	public arb create_assetregisterbookform(arb Assetregisterbookform) throws Exception {
 
  		  log.setLevel(Level.INFO);
 	      log.info("create_assetregisterbookform service operation started !");
 
 		try{
-			Assetregisterbookform the_Assetregisterbookform;
+			arb the_Assetregisterbookform;
 
 			the_Assetregisterbookform = Assetregisterbookform_dao.create_assetregisterbookform(Assetregisterbookform);
 
@@ -94,13 +94,13 @@ private static Logger log = Logger.getLogger(AssetregisterbookformService.class.
 	*@throws Exception
 	*/
 
-	public Assetregisterbookform update_assetregisterbookform(Assetregisterbookform Assetregisterbookform) throws Exception {
+	public arb update_assetregisterbookform(arb Assetregisterbookform) throws Exception {
 
  		  log.setLevel(Level.INFO);
 	      log.info("update_assetregisterbookform service operation started !");
 
 		try{
-			Assetregisterbookform the_Assetregisterbookform;
+			arb the_Assetregisterbookform;
 
 			the_Assetregisterbookform = Assetregisterbookform_dao.update_assetregisterbookform(Assetregisterbookform);
 
@@ -130,13 +130,13 @@ private static Logger log = Logger.getLogger(AssetregisterbookformService.class.
 	*@throws Exception
 	*/
 
-	public Assetregisterbookform assetregisterbookform_search_for_update(String id ) throws Exception {
+	public arb assetregisterbookform_search_for_update(String id ) throws Exception {
 
  		  log.setLevel(Level.INFO);
 	      log.info("assetregisterbookform_search_for_update service operation started !");
 
 		try{
-			Assetregisterbookform the_Assetregisterbookform;
+			arb the_Assetregisterbookform;
 
 			the_Assetregisterbookform = Assetregisterbookform_dao.assetregisterbookform_search_for_update(id);
 
@@ -202,13 +202,13 @@ private static Logger log = Logger.getLogger(AssetregisterbookformService.class.
 	*@throws Exception
 	*/
 
-	public ArrayList<Assetregisterbookform> get_all_assetregisterbookform() throws Exception {
+	public ArrayList<arb> get_all_assetregisterbookform() throws Exception {
 
  		  log.setLevel(Level.INFO);
 	      log.info(" service operation started !");
 
 		try{
-			ArrayList<Assetregisterbookform> Assetregisterbookform_list;
+			ArrayList<arb> Assetregisterbookform_list;
 
 			Assetregisterbookform_list = Assetregisterbookform_dao.get_all_assetregisterbookform();
 

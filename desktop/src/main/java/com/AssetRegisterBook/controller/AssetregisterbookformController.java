@@ -24,7 +24,7 @@ import com.wordnik.swagger.annotations.ApiResponse;
 import com.wordnik.swagger.annotations.ApiResponses;
 
 
-import com.AssetRegisterBook.domain.core.Assetregisterbookform;
+import com.AssetRegisterBook.domain.core.arb;
 
 import com.AssetRegisterBook.config.AssetRegisterBookSwaggerUIConstants;
 
@@ -85,7 +85,7 @@ private static Logger log = Logger.getLogger(AssetregisterbookformController.cla
 	*/
 
 
-	@ApiOperation(value = "/create_Assetregisterbookform", httpMethod = "POST",notes = "creates a noun of Assetregisterbookform",response = Assetregisterbookform.class)
+	@ApiOperation(value = "/create_Assetregisterbookform", httpMethod = "POST",notes = "creates a noun of Assetregisterbookform",response = arb.class)
 	@ApiResponses(value = {
 		@ApiResponse(code = 200, message = AssetRegisterBookSwaggerUIConstants.SUCCESS),
 	    @ApiResponse(code = 404, message = AssetRegisterBookSwaggerUIConstants.NOT_FOUND),
@@ -96,14 +96,14 @@ private static Logger log = Logger.getLogger(AssetregisterbookformController.cla
 
 	@RequestMapping(method = RequestMethod.POST,value = "/create_Assetregisterbookform" ,headers="Accept=application/json")
     @ResponseBody
-	public Assetregisterbookform create_Assetregisterbookform(@RequestBody Assetregisterbookform the_Assetregisterbookform) throws Exception {
+	public arb create_Assetregisterbookform(@RequestBody arb the_Assetregisterbookform) throws Exception {
 
 		log.setLevel(Level.INFO);
 	    log.info("create_Assetregisterbookform controller started operation!");
 
 		the_Assetregisterbookform.setid(null);
 
-		Assetregisterbookform a_Assetregisterbookform = Assetregisterbookform_service.create_assetregisterbookform(the_Assetregisterbookform);
+		arb a_Assetregisterbookform = Assetregisterbookform_service.create_assetregisterbookform(the_Assetregisterbookform);
 
 		log.info("Object returned from create_Assetregisterbookform method !");
 
@@ -125,7 +125,7 @@ private static Logger log = Logger.getLogger(AssetregisterbookformController.cla
 	*/
 
 
-	@ApiOperation(value = "/update_Assetregisterbookform", httpMethod = "PUT",notes = "updates a noun of Assetregisterbookform",response = Assetregisterbookform.class)
+	@ApiOperation(value = "/update_Assetregisterbookform", httpMethod = "PUT",notes = "updates a noun of Assetregisterbookform",response = arb.class)
 	@ApiResponses(value = {
 		@ApiResponse(code = 200, message = AssetRegisterBookSwaggerUIConstants.SUCCESS),
 	    @ApiResponse(code = 404, message = AssetRegisterBookSwaggerUIConstants.NOT_FOUND),
@@ -136,12 +136,12 @@ private static Logger log = Logger.getLogger(AssetregisterbookformController.cla
 
 	@RequestMapping(method = RequestMethod.PUT,value = "/update_Assetregisterbookform" ,headers="Accept=application/json")
     @ResponseBody
-	public Assetregisterbookform update_Assetregisterbookform(@RequestBody Assetregisterbookform the_Assetregisterbookform) throws Exception {
+	public arb update_Assetregisterbookform(@RequestBody arb the_Assetregisterbookform) throws Exception {
 
 		log.setLevel(Level.INFO);
 	    log.info("update_Assetregisterbookform controller started operation!");
 
-		Assetregisterbookform a_Assetregisterbookform;
+		arb a_Assetregisterbookform;
 
 		a_Assetregisterbookform = Assetregisterbookform_service.update_assetregisterbookform(the_Assetregisterbookform);
 
@@ -165,7 +165,7 @@ private static Logger log = Logger.getLogger(AssetregisterbookformController.cla
 	*/
 
 
-	@ApiOperation(value = "/search_for_update_Assetregisterbookform/{Assetregisterbookform_id}", httpMethod = "GET",notes = "updates a noun of Assetregisterbookform",response = Assetregisterbookform.class)
+	@ApiOperation(value = "/search_for_update_Assetregisterbookform/{Assetregisterbookform_id}", httpMethod = "GET",notes = "updates a noun of Assetregisterbookform",response = arb.class)
 	@ApiResponses(value = {
 		@ApiResponse(code = 200, message = AssetRegisterBookSwaggerUIConstants.SUCCESS),
 	    @ApiResponse(code = 404, message = AssetRegisterBookSwaggerUIConstants.NOT_FOUND),
@@ -176,12 +176,12 @@ private static Logger log = Logger.getLogger(AssetregisterbookformController.cla
 
 	@RequestMapping(method = RequestMethod.GET,value = "/search_for_update_Assetregisterbookform/{Assetregisterbookform_id}" ,headers="Accept=application/json")
     @ResponseBody
-	public Assetregisterbookform search_for_update_Assetregisterbookform(@PathVariable("Assetregisterbookform_id")String Assetregisterbookform_id) throws Exception {
+	public arb search_for_update_Assetregisterbookform(@PathVariable("Assetregisterbookform_id")String Assetregisterbookform_id) throws Exception {
 
 		log.setLevel(Level.INFO);
 	    log.info("search_for_update_Assetregisterbookform controller started operation!");
 
-		Assetregisterbookform the_Assetregisterbookform = new Assetregisterbookform();
+		arb the_Assetregisterbookform = new arb();
 
 		the_Assetregisterbookform = Assetregisterbookform_service.assetregisterbookform_search_for_update(Assetregisterbookform_id);
 
@@ -205,7 +205,7 @@ private static Logger log = Logger.getLogger(AssetregisterbookformController.cla
 	*/
 
 
-	@ApiOperation(value = "/delete_Assetregisterbookform/{Assetregisterbookform_id}", httpMethod = "DELETE",notes = "deletes a noun of Assetregisterbookform",response = Assetregisterbookform.class)
+	@ApiOperation(value = "/delete_Assetregisterbookform/{Assetregisterbookform_id}", httpMethod = "DELETE",notes = "deletes a noun of Assetregisterbookform",response = arb.class)
 	@ApiResponses(value = {
 		@ApiResponse(code = 200, message = AssetRegisterBookSwaggerUIConstants.SUCCESS),
 	    @ApiResponse(code = 404, message = AssetRegisterBookSwaggerUIConstants.NOT_FOUND),
@@ -245,7 +245,7 @@ private static Logger log = Logger.getLogger(AssetregisterbookformController.cla
 	*/
 
 
-	@ApiOperation(value = "/get_all_Assetregisterbookform", httpMethod = "GET",notes = "special search that gets all values of Assetregisterbookform",response = Assetregisterbookform.class)
+	@ApiOperation(value = "/get_all_Assetregisterbookform", httpMethod = "GET",notes = "special search that gets all values of Assetregisterbookform",response = arb.class)
 	@ApiResponses(value = {
 		@ApiResponse(code = 200, message = AssetRegisterBookSwaggerUIConstants.SUCCESS),
 	    @ApiResponse(code = 404, message = AssetRegisterBookSwaggerUIConstants.NOT_FOUND),
@@ -256,21 +256,18 @@ private static Logger log = Logger.getLogger(AssetregisterbookformController.cla
 
 	@RequestMapping(method = RequestMethod.GET,value = "/get_all_Assetregisterbookform" ,headers="Accept=application/json")
     @ResponseBody
-	public List<Assetregisterbookform> get_all_Assetregisterbookform() throws Exception {
+	public List<arb> get_all_Assetregisterbookform() throws Exception {
 
 		log.setLevel(Level.INFO);
 	    log.info("get_all_Assetregisterbookform controller started operation!");
 
-		List<Assetregisterbookform> Assetregisterbookform_list = new ArrayList<Assetregisterbookform>();
+		List<arb> Assetregisterbookform_list = new ArrayList<arb>();
 
 		Assetregisterbookform_list = Assetregisterbookform_service.get_all_assetregisterbookform();
 
 		log.info("Object returned from get_all_Assetregisterbookform method !");
 
- 
-
         return Assetregisterbookform_list;
-
 	}
 
 

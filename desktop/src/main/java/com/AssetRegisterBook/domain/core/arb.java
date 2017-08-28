@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @TypeAlias("assetregisterbookform")
 
 @ApiModel( value = "Assetregisterbookform", description = "assetregisterbookform" )
-public class Assetregisterbookform  implements Serializable  {
+public class arb  implements Serializable  {
 
 	/**
 	 * 

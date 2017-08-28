@@ -22,7 +22,7 @@ import org.springframework.data.couchbase.core.CouchbaseTemplate;
 import com.couchbase.client.protocol.views.ViewDesign;
 
 
-import com.AssetRegisterBook.domain.core.Assetregisterbookform;
+import com.AssetRegisterBook.domain.core.arb;
 
 
 /**
@@ -64,11 +64,11 @@ public class AssetregisterbookformDao   {
 	*@throws Exception
 	*/
 
-	public Assetregisterbookform assetregisterbookform_search_for_update(String id) throws Exception {
+	public arb assetregisterbookform_search_for_update(String id) throws Exception {
 		  log.setLevel(Level.INFO);
 	      log.info("assetregisterbookform_search_for_update Dao started operation!");
 
-		   Assetregisterbookform  the_assetregisterbookform = couchbaseTemplate.findById(id,Assetregisterbookform.class);
+		   arb  the_assetregisterbookform = couchbaseTemplate.findById(id,arb.class);
 		  return the_assetregisterbookform;
 
 	}
@@ -84,7 +84,7 @@ public class AssetregisterbookformDao   {
 	*@throws Exception
 	*/
 
-	public ArrayList<Assetregisterbookform> get_all_assetregisterbookform() throws Exception {
+	public ArrayList<arb> get_all_assetregisterbookform() throws Exception {
 		  log.setLevel(Level.INFO);
 	      log.info("get_all_assetregisterbookform Dao started operation!");
 
@@ -93,7 +93,7 @@ public class AssetregisterbookformDao   {
 		   query.setIncludeDocs(true);
 		   query.setStale( Stale.FALSE );
 
-		  return (ArrayList<Assetregisterbookform>)  couchbaseTemplate.findByView("dev_assetregisterbookform","assetregisterbookform_by_name",query,Assetregisterbookform.class);
+		  return (ArrayList<arb>)  couchbaseTemplate.findByView("dev_arb","arb_by_name",query,arb.class);
 
 	}
 
@@ -111,7 +111,7 @@ public class AssetregisterbookformDao   {
 	*/
 
 
-	public Assetregisterbookform create_assetregisterbookform(Assetregisterbookform Assetregisterbookform ) throws Exception {
+	public arb create_assetregisterbookform(arb Assetregisterbookform ) throws Exception {
 
 	 	  log.setLevel(Level.INFO);
 	      log.info("create_assetregisterbookform Dao started operation!");
@@ -120,13 +120,13 @@ public class AssetregisterbookformDao   {
  		 String  clientKey =  Long.toString(client.incr(key,1,1));
  		 Assetregisterbookform.setid(clientKey);
  		 couchbaseTemplate.save(Assetregisterbookform);
- 		 String viewName = "assetregisterbookform_by_name";
+ 		 String viewName = "arb_by_name";
  		  String mapFunction =  "function (doc, meta) {"
- 		 +  "if (doc._class == \"com.AssetRegisterBook.domain.core.Assetregisterbookform\") {"
+ 		 +  "if (doc._class == \"com.AssetRegisterBook.domain.core.arb\") {"//Assetregisterbookform
  		  + "emit(null, null);"
  		  +" }"
  		 +"}";
- 		 DesignDocument designDoc = new DesignDocument("dev_assetregisterbookform");
+ 		 DesignDocument designDoc = new DesignDocument("dev_arb");//assetregisterbookform
  		 System.err.println("-- > designDoc - > "+designDoc.getName()+"-> lan - > "+designDoc.getLanguage());
  		 ViewDesign view = new ViewDesign(viewName, mapFunction);
  		 System.err.println("-- > view - > "+view.getName()+"-> lan - > "+view.getReduce().toString());
@@ -149,7 +149,7 @@ public class AssetregisterbookformDao   {
 	*/
 
 
-	public Assetregisterbookform update_assetregisterbookform(Assetregisterbookform Assetregisterbookform) throws Exception {
+	public arb update_assetregisterbookform(arb Assetregisterbookform) throws Exception {
 
 	 	  log.setLevel(Level.INFO);
 	      log.info("update_assetregisterbookform Dao started operation!");
