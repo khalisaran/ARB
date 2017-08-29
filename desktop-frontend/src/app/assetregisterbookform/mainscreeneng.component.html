@@ -4,6 +4,7 @@
             <div class="col-lg-12" style="width: max-content;">
                 <tabset>
                     <tab heading='Account Details'>
+                      <h3 style="margin-left: 40px;"><b>Physical Verification</b></h3>
                         <section>
                             <div class="container">
                                 <div class="row">
@@ -16,14 +17,12 @@
                                         <input mdInput placeholder="Input" [(ngModel)]="assetregisterbookform.engineer_1"></md-input-container>
                                     </div>
                                 </div>
+                                 <h3 style="margin-left: 20px;"><b>Asset Details</b></h3>
                                 <div class="row" style="padding-top: 52px;">
                                     <div class="col-lg-2 "><label class="generated-label">Asset Identity</label></div>
                                     <div class="col-lg-3">
-                                        <md-select placeholder="Select" class="null" style="width: 100%; display: block;">
-                                            <md-option [value]="1">Value 1</md-option>
-                                            <md-option [value]="2">Value 2</md-option>
-                                            <md-option [value]="3">Value 3</md-option>
-                                            <md-option [value]="4">Value 4</md-option>
+                                        <md-select placeholder="Asset Identity" [(ngModel)]='assetregisterbookform.identity' *ngIf="identityList" style="display: block;">
+                                            <md-option *ngFor="let asset_identity of identityList" value="{{asset_identity.name}}">{{asset_identity.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -31,11 +30,8 @@
                                     <div class="col-lg-2"><label class="generated-label">Purpose</label>
                                     </div>
                                     <div class="col-lg-3">
-                                        <md-select placeholder="Select" class="null" style="width: 100%; display: block;">
-                                            <md-option [value]="1">Value 1</md-option>
-                                            <md-option [value]="2">Value 2</md-option>
-                                            <md-option [value]="3">Value 3</md-option>
-                                            <md-option [value]="4">Value 4</md-option>
+                                        <md-select placeholder="Select Purpose" [(ngModel)]='assetregisterbookform.purpose' *ngIf="purposeList" style="display: block;">
+                                            <md-option *ngFor="let asset_purpose of purposeList" value="{{asset_purpose.name}}">{{asset_purpose.name}}</md-option>
                                         </md-select>
                                     </div>
                                 </div>
@@ -43,20 +39,14 @@
                                     <div class="col-lg-2"><label class="generated-label">Office</label>
                                     </div>
                                     <div class="col-lg-2">
-                                        <md-select placeholder="Select" class="null" style="width: 100%;display: block;">
-                                            <md-option [value]="1">Value 1</md-option>
-                                            <md-option [value]="2">Value 2</md-option>
-                                            <md-option [value]="3">Value 3</md-option>
-                                            <md-option [value]="4">Value 4</md-option>
+                                          <md-select placeholder="Select Office" [(ngModel)]='assetregisterbookform.loc5' *ngIf="loc5List" style="display: block;">
+                                            <md-option *ngFor="let asset_loc5 of loc5List" value="{{asset_loc5.name}}">{{asset_loc5.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-1"><label class="generated-label">Room</label></div>
                                     <div class="col-lg-2">
-                                        <md-select placeholder="Select" class="null" style="width: 100%;display: block;">
-                                            <md-option [value]="1">Value 1</md-option>
-                                            <md-option [value]="2">Value 2</md-option>
-                                            <md-option [value]="3">Value 3</md-option>
-                                            <md-option [value]="4">Value 4</md-option>
+                                        <md-select placeholder="Select Room" [(ngModel)]='assetregisterbookform.room' *ngIf="roomList" style="display: block;">
+                                            <md-option *ngFor="let asset_room of roomList" value="{{asset_room.name}}">{{asset_room.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2"><label class="generated-label">Rack No.</label>
@@ -68,11 +58,8 @@
                                 <div class="row" style="padding-top: 52px">
                                     <div class="col-lg-2 "><label class="generated-label">Current Location</label></div>
                                     <div class="col-lg-3">
-                                        <md-select placeholder="Select" class="null" style="width: 100%; display: block;">
-                                            <md-option [value]="1">Value 1</md-option>
-                                            <md-option [value]="2">Value 2</md-option>
-                                            <md-option [value]="3">Value 3</md-option>
-                                            <md-option [value]="4">Value 4</md-option>
+                                        <md-select placeholder="Current Location" [(ngModel)]='assetregisterbookform.location1' *ngIf="location1List" style="display: block;">
+                                            <md-option *ngFor="let asset_location1 of location1List" value="{{asset_location1.name}}">{{asset_location1.name}}</md-option>
                                         </md-select>
                                     </div>
                                     <div class="col-lg-2" style="margin-left: 55px"><label class="generated-label">Make</label></div>

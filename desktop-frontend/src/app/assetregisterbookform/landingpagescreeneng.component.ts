@@ -22,10 +22,45 @@ export class LandingPageScreenengComponent implements OnInit {
     this.Table_151GridOptions = {
     	columnDefs: [
     		{
-    			headerName: "Account(CAF)Number",
-    			field: "acc_no",
-    		},
-    		{
+          headerName: "Account(CAF)Number",
+          field: "acc_no",
+        },{
+          headerName: "Asset Identity",
+          field: "identity",
+        },{
+          headerName: "Asset Code",
+          field: "code",
+        },{
+          headerName: "PWC Asset Number",
+          field: "asset_number",
+        },{
+          headerName: "Office",
+          field: "loc5",
+        },{
+          headerName: "Room",
+          field: "room",
+        },{
+          headerName: "Last verification Date",
+          field: "lvd",
+        },{
+          headerName: "Last verified By",
+          field: "engineer_1",
+        },{
+          headerName: "Purpose",
+          field: "purpose",
+        },{
+          headerName: "Rack No",
+          field: "rack1",
+        },{
+          headerName: "Current Location",
+          field: "location1",
+        },{
+          headerName: "Make",
+          field: "make",
+        },{
+          headerName: "Model",
+          field: "model",
+        },{
     			headerName: "Datacard Type",
     			field: "data_type",
     		},
