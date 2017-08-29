@@ -8,14 +8,16 @@ security:
 entitymanager:
   packagesToScan: com.AssetRegisterBook.*
 
+#34.205.61.224
 
+#10.243.76.68 PWC
 
 couchbase:
   cluster:
-    ip: localhost
-    bucket: OriginalARBF
-    username: Administrator
-    password: 211218
+    ip: 10.243.76.68
+    bucket: ARB
+    username: gepuser
+    password: tang3456
     db:
       password: 
 
