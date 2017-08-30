@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 73px">
+        <div class="col-lg-5 col-lg-offset-2"><label class="generated-label">List Of  Reason For Not Count</label>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 66px">
+        <div class="col-lg-2 col-lg-offset-2"><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="reasonfornotcount.reason"></md-input-container>
+        </div>
+        <div class="col-lg-1 "><button class="btn btn-primary" (click)="get_all_ReasonForNotCount()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 42px">
+        <div class="col-lg-4 col-lg-offset-2"><ag-grid-angular #Table_905Grid style="width: 100%; height: 138px;" class="ag-fresh" [gridOptions]="Table_905GridOptions" [rowData]="array_ReasonForNotCount"></ag-grid-angular>
+        </div>
+        </div>
+
+    </div>
+</section>
+<modal #modalSFU>
+	<modal-header [show-close]="true">
+		<h4 class="modal-title">ID required!</h4>
+	</modal-header>
+	<modal-body>
+		<md-input-container><input mdInput placeholder="ReasonForNotCount ID" [(ngModel)]="reasonfornotcount.id"></md-input-container>
+	</modal-body>
+	<modal-footer>
+		<button type="button" class="btn btn-default" data-dismiss="modal" (click)="modalSFU.dismiss()">Cancel</button>
+		<button type="button" class="btn btn-primary" (click)="search_for_update_ReasonForNotCount()">Get ReasonForNotCount</button>
+	</modal-footer>
+</modal>

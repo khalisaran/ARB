@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 57px">
+        <div class="col-lg-4 col-lg-offset-2"><label class="generated-label">Label</label>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 50px">
+        <div class="col-lg-2 col-lg-offset-2"><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="accessories.name"></md-input-container>
+        </div>
+        <div class="col-lg-1 "><button class="btn btn-primary" (click)="get_all_Accessories()" style="width: 100%;">GetAll</button>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 43px">
+        <div class="col-lg-3 col-lg-offset-2"><ag-grid-angular #Table_1105Grid style="width: 100%; height: 138px;" class="ag-fresh" [gridOptions]="Table_1105GridOptions" [rowData]="array_Accessories"></ag-grid-angular>
+        </div>
+        </div>
+
+    </div>
+</section>
+<modal #modalSFU>
+	<modal-header [show-close]="true">
+		<h4 class="modal-title">ID required!</h4>
+	</modal-header>
+	<modal-body>
+		<md-input-container><input mdInput placeholder="Accessories ID" [(ngModel)]="accessories.id"></md-input-container>
+	</modal-body>
+	<modal-footer>
+		<button type="button" class="btn btn-default" data-dismiss="modal" (click)="modalSFU.dismiss()">Cancel</button>
+		<button type="button" class="btn btn-primary" (click)="search_for_update_Accessories()">Get Accessories</button>
+	</modal-footer>
+</modal>
