@@ -2,30 +2,28 @@ import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { ToastsManager } from 'ng2-toastr/ng2-toastr';
-import { AccessoriesService } from './accessories.service';
+import { ApproverOrProjectManagerService } from './approverorprojectmanager.service';
 import { GridOptions } from 'ag-grid';
-import { IAccessories } from './accessories';
+import { IApproverOrProjectManager } from './approverorprojectmanager';
 
 @Component({
     moduleId: module.id,
-    templateUrl: 'list_accessorieseng.component.html'
+    templateUrl: 'list_approverorprojectmanagereng.component.html'
 })
-export class List_AccessoriesengComponent implements OnInit {
-  private Table_1105GridOptions: GridOptions;
+export class List_ApproverOrProjectManagerengComponent implements OnInit {
+  private Table_701GridOptions: GridOptions;
 
-  private accessories: IAccessories = {
+  private approverorprojectmanager: IApproverOrProjectManager = {
   	id: 0,
   	name: '',
   	description: ''}
   ;
   @ViewChild('modalSFU')
    mymodalSFU: ModalComponent;
-
-array_Accessories : any [];
-
-  constructor(private router: Router, public toastr: ToastsManager, vcr: ViewContainerRef, private accessoriesservice: AccessoriesService) { 
+array_ApproverOrProjectManager :any [];
+  constructor(private router: Router, public toastr: ToastsManager, vcr: ViewContainerRef, private approverorprojectmanagerservice: ApproverOrProjectManagerService) { 
     this.toastr.setRootViewContainerRef(vcr);
-    this.Table_1105GridOptions = {
+    this.Table_701GridOptions = {
     	columnDefs: [
     		{
     			headerName: "Name",
@@ -42,30 +40,31 @@ array_Accessories : any [];
   }
 
   ngOnInit() {
-   /* if(!this.accessories.id)
+   /* if(!this.approverorprojectmanager.id)
     	this.mymodalSFU.open();*/
-this.get_all_Accessories();
+      this.get_all_ApproverOrProjectManager();
+
   }
 
 
-  get_all_Accessories(){
-      this.accessoriesservice.get_all_Accessories()
+  get_all_ApproverOrProjectManager(){
+      this.approverorprojectmanagerservice.get_all_ApproverOrProjectManager()
           .subscribe(data => {
-            console.log("get_all_Accessories data returned");
-            this.array_Accessories = data;
+            console.log("get_all_ApproverOrProjectManager done");
+            this.array_ApproverOrProjectManager =data;
            // this.toastr.success('Success!');
           },
           error => {
             this.toastr.error('Check the browser console to see more info.','Error!');
           });
   }
-  search_for_update_Accessories(){
+  search_for_update_ApproverOrProjectManager(){
       this.mymodalSFU.close();
-      this.accessoriesservice.search_for_update_Accessories(this.accessories.id)
+      this.approverorprojectmanagerservice.search_for_update_ApproverOrProjectManager(this.approverorprojectmanager.id)
           .subscribe(data => {
             console.log("data", data);
             this.toastr.success('Success!');
-            this.accessories = data
+            this.approverorprojectmanager = data
           },
           error => {
             this.toastr.error('Check the browser console to see more info.','Error!');

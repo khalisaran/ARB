@@ -42,7 +42,7 @@
           <div class="col-sm-4">
               <ul class="multi-column-dropdown" style="list-style: none;">
                 <li><a [routerLink]="['AccessorieScreeneng']">Accessories</a></li> 
-                <li><a [routerLink]="['List_Accessorieseng']"> List Accessories</a></li>
+                
                 <li><a [routerLink]="['AllocatedFromScreeneng']">AllocatedFrom</a></li>
                 <li><a [routerLink]="['ApplicationScreeneng']">Application</a></li>
                 <li><a [routerLink]="['ApproverOrProjectManagerScreeneng']">ApproverOrProjectManager</a></li>    
@@ -51,7 +51,7 @@
                 <li><a [routerLink]="['BuildingOrFloorScreeneng']">BuildingOrFloor</a></li>
                 <li><a [routerLink]="['CategoryScreeneng']">Category</a></li>
                 <li><a [routerLink]="['CensusCount_screeneng']">Census Count</a></li>
-                <li><a [routerLink]="['List_CensusCount_screeneng']">List CensusCount</a></li>
+
                 <li><a [routerLink]="['CurrencyScreeneng']">Currency</a></li>
               </ul>
           </div>
@@ -59,16 +59,16 @@
           <div class="col-sm-4">
               <ul class="multi-column-dropdown" style="list-style: none;">    
                 <li><a [routerLink]="['Screen_1750_DataTransferLimiteng']">Data Transfer Limit</a></li>
-                <li><a [routerLink]="['Data_limit_list_screeneng']">Data Limit List</a></li>
+
                 <li><a [routerLink]="['EngineerScreeneng']">Engineer</a></li> 
                 <li><a [routerLink]="['List_Engineereng']">List Engineer</a></li>    
                 <li><a [routerLink]="['Infra_own_screeneng']">Infra_Own</a></li>
                 <li><a [routerLink]="['InsuranceDetailsScreeneng']">InsuranceDetails</a></li> 
                 <li><a [routerLink]="['InvoiceVendorScreeneng']">InvoiceVendor</a></li>
                 <li><a [routerLink]="['LIND_Screeneng']">LNID</a></li>
-                <li><a [routerLink]="['List_LINDeng']">List LIND</a></li>
+
                 <li><a [routerLink]="['ModeOfUseScreeneng']">Mode OfU se </a></li>
-                <li><a [routerLink]="['List_ModeOfUseeng']">List Mode Of Use</a></li>
+                
                 <li><a [routerLink]="['OS_Screeneng']">OS</a></li>
                 <li><a [routerLink]="['ProjectNameScreeneng']">ProjectName</a></li> 
                 <li><a [routerLink]="['PoyearScreeneng']">Poyear</a></li>
@@ -80,9 +80,9 @@
               <ul class="multi-column-dropdown" style="list-style: none;">    
                 <li><a [routerLink]="['PoEntityScreeneng']">PoEntity</a></li>
                 <li><a [routerLink]="['ReasonForNotCount_screeneng']">ReasonForNotCount</a></li>
-                <li><a [routerLink]="['List_ReasonForNotCount_screeneng']">List ReasonForNotCount</a>
+               
                 <li><a [routerLink]="['Screen_1700_rentaleng']">Rental Plan</a></li>
-                <li><a [routerLink]="['Rental_plan_listeng']">Rental_plan_list</a></li>
+
                 <li><a [routerLink]="['Sg_Screeneng']">Sg</a></li>
                 <li><a [routerLink]="['Srv_adm_Screeneng']">Server Administrator</a></li>
                 <li><a [routerLink]="['Srv_own_screeneng']">Server Owner</a></li>
@@ -97,7 +97,43 @@
                   <li><a [routerLink]="['RoomScreeneng']">RoomScreen</a></li>
               </ul>
           </div>
-       </ul>
+         </ul>
+      </li>
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">List View Secondary noun<span class="caret"></span></a> 
+        <ul class="dropdown-menu">
+                 <li><a [routerLink]="['List_Accessorieseng']"> List Accessories</a></li>
+                <li><a [routerLink]="['List_CensusCount_screeneng']">List CensusCount</a></li>
+                <li><a [routerLink]="['Data_limit_list_screeneng']">Data Limit List</a></li>
+                <li><a [routerLink]="['List_LINDeng']">List LIND</a></li>
+                <li><a [routerLink]="['List_ModeOfUseeng']">List Mode Of Use</a></li>
+                  <li><a [routerLink]="['Rental_plan_listeng']">Rental_plan_list</a></li>
+                 <li><a [routerLink]="['List_ReasonForNotCount_screeneng']">List ReasonForNotCount</a></li>
+                 <li><a [routerLink]="['List_ModeOfUseeng']">List_ModeOfUse</a></li>
+                 <li><a [routerLink]="['List_Engineereng']">List_Engineer</a></li>
+                 <li><a [routerLink]="['List_allocatedfromeng']">Allocated From</a></li>
+                 <li><a [routerLink]="['List_ApproverOrProjectManagereng']">List ApproverOrProjectManager</a></li>
+        <li><a [routerLink]="['List_ProjectNameeng']">List_ProjectName</a></li>
+        <li><a [routerLink]="['Lsit_BuildingOrFlooreng']">Lsit_BuildingOrFloor</a></li>
+        <li><a [routerLink]="['List_OS_Activityeng']">List_OS</a></li>
+        <li><a [routerLink]="['List_Category_Activityeng']">List_Category</a></li>
+        <li><a [routerLink]="['List_Application_Activityeng']">List_Application</a></li>
+        <li><a [routerLink]="['List_Poyear_Activityeng']">List_Poyear</a></li>
+        <li><a [routerLink]="['List_Poentity_Activityeng']">List_Poentity</a></li>
+        <li><a [routerLink]="['List_BillingEntity_Activityeng']">List_BillingEntity</a></li>
+
+      <!--   
+        <li><a [routerLink]="['List_Currency_Activityeng']">List_Currency</a></li>
+        <li><a [routerLink]="['List_InvoiceVendor_Activityeng']">List_InvoiceVendor</a></li>
+        
+        <li><a [routerLink]="['List_WarrantyStatus_Activityeng']">List_WarrantyStatus</a></li>
+        <li><a [routerLink]="['List_InsuranceStatus_Activityeng']">List_InsuranceStatus</a></li>
+        <li><a [routerLink]="['List_UserAllocationStatus_Activityeng']">List_UserAllocationStatus</a></li>
+
+        <li><a [routerLink]="['List_UsedUs_Activityeng']">List_UsedUs_Activity</a></li>
+        <li><a [routerLink]="['List_Sgeng']">List_Sg</a></li> -->
+        </ul>
       </li>
     </ul>
   </div>

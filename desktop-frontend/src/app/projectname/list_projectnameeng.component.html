@@ -1,0 +1,29 @@
+<section>
+    <div class="container">
+        <div class="row" style="padding-top: 119px">
+        <div class="col-lg-3 col-lg-offset-2"><label class="generated-label">List Of Project Name</label>
+        </div>
+        </div>
+       <!--  <div class="row" style="padding-top: 56px">
+        <div class="col-lg-3 col-lg-offset-2"><button class="btn btn-primary" (click)="get_all_ProjectName()" style="width: 100%;">GetAll</button>
+        </div>
+        </div> -->
+        <div class="row" style="padding-top: 51px">
+         <div class="col-lg-8 " style="width:100%;height: 300px;"><ag-grid-angular #Table_753Grid style="width: 100%; height: 138px;" class="ag-fresh" [gridOptions]="Table_753GridOptions" [rowData]="array_ProjectName"></ag-grid-angular>
+        </div>
+        </div>
+
+    </div>
+</section>
+<modal #modalSFU>
+	<modal-header [show-close]="true">
+		<h4 class="modal-title">ID required!</h4>
+	</modal-header>
+	<modal-body>
+		<md-input-container><input mdInput placeholder="ProjectName ID" [(ngModel)]="projectname.id"></md-input-container>
+	</modal-body>
+	<modal-footer>
+		<button type="button" class="btn btn-default" data-dismiss="modal" (click)="modalSFU.dismiss()">Cancel</button>
+		<button type="button" class="btn btn-primary" (click)="search_for_update_ProjectName()">Get ProjectName</button>
+	</modal-footer>
+</modal>

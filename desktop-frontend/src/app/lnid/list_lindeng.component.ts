@@ -43,6 +43,7 @@ array_LNID : any[];
   ngOnInit() {
    /* if(!this.lnid.id)
     	this.mymodalSFU.open();*/
+      this.get_all_LNID();
 
   }
 

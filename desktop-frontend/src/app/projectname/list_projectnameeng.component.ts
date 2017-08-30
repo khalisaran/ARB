@@ -2,18 +2,18 @@ import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { ToastsManager } from 'ng2-toastr/ng2-toastr';
-import { ModeOfUseService } from './modeofuse.service';
+import { ProjectNameService } from './projectname.service';
 import { GridOptions } from 'ag-grid';
-import { IModeOfUse } from './modeofuse';
+import { IProjectName } from './projectname';
 
 @Component({
     moduleId: module.id,
-    templateUrl: 'list_modeofuseeng.component.html'
+    templateUrl: 'list_projectnameeng.component.html'
 })
-export class List_ModeOfUseengComponent implements OnInit {
-  private Table_955GridOptions: GridOptions;
+export class List_ProjectNameengComponent implements OnInit {
+  private Table_753GridOptions: GridOptions;
 
-  private modeofuse: IModeOfUse = {
+  private projectname: IProjectName = {
   	id: 0,
   	name: '',
   	description: ''}
@@ -21,10 +21,10 @@ export class List_ModeOfUseengComponent implements OnInit {
   @ViewChild('modalSFU')
    mymodalSFU: ModalComponent;
 
-array_ModeOfUse : any[];
-  constructor(private router: Router, public toastr: ToastsManager, vcr: ViewContainerRef, private modeofuseservice: ModeOfUseService) { 
+array_ProjectName :any [];
+  constructor(private router: Router, public toastr: ToastsManager, vcr: ViewContainerRef, private projectnameservice: ProjectNameService) { 
     this.toastr.setRootViewContainerRef(vcr);
-    this.Table_955GridOptions = {
+    this.Table_753GridOptions = {
     	columnDefs: [
     		{
     			headerName: "Name",
@@ -40,32 +40,31 @@ array_ModeOfUse : any[];
 
   }
 
-  ngOnInit() {
-    /*if(!this.modeofuse.id)
+  ngOnInit() {/*
+    if(!this.projectname.id)
     	this.mymodalSFU.open();*/
-      this.get_all_ModeOfUse();
-
+this.get_all_ProjectName();
   }
 
 
-  get_all_ModeOfUse(){
-      this.modeofuseservice.get_all_ModeOfUse()
+  get_all_ProjectName(){
+      this.projectnameservice.get_all_ProjectName()
           .subscribe(data => {
-            console.log("get_all_ModeOfUse data returned");
+            console.log("get_all_ProjectName done");
             //this.toastr.success('Success!');
-            this.array_ModeOfUse = data;
+            this.array_ProjectName =data;
           },
           error => {
             this.toastr.error('Check the browser console to see more info.','Error!');
           });
   }
-  search_for_update_ModeOfUse(){
+  search_for_update_ProjectName(){
       this.mymodalSFU.close();
-      this.modeofuseservice.search_for_update_ModeOfUse(this.modeofuse.id)
+      this.projectnameservice.search_for_update_ProjectName(this.projectname.id)
           .subscribe(data => {
             console.log("data", data);
             this.toastr.success('Success!');
-            this.modeofuse = data
+            this.projectname = data
           },
           error => {
             this.toastr.error('Check the browser console to see more info.','Error!');

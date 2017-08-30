@@ -582,7 +582,8 @@ export class LandingPageScreenengComponent implements OnInit {
           .subscribe(data => {
             console.log("data", data);
             this.array_Assetregisterbookform = data;
-            this.toastr.success('Success!');
+            //this.toastr.success('Success!');
+            this.toastr.success('go bottom!',null,{toastLife: 1000,'position-class':'toast-bottom-right','animation-class': 'toast-bottom-right'});
           },
           error => {
             this.toastr.error('Check the browser console to see more info.','Error!');

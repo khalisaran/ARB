@@ -43,6 +43,7 @@ array_Engineer :any [];
   ngOnInit() {
    /* if(!this.engineer.id)
     	this.mymodalSFU.open();*/
+      this.get_all_Engineer();
 
   }
 

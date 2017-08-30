@@ -42,6 +42,7 @@ array_censuscount : any[];
   ngOnInit() {
   /*  if(!this.censuscount.id)
     	this.mymodalSFU.open();*/
+      this.get_all_CensusCount();
 
   }
 

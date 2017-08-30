@@ -489,7 +489,7 @@ get_all_Poentities() {
       this.assetregisterbookformservice.get_all_Assetregisterbookform()
           .subscribe(data => {
             console.log("get_all_Assetregisterbookform");
-            this.toastr.success('Success!');
+            this.toastr.success('Success!',null,{toastLife: 1000,positionClass:"toast-bottom-right"});
           },
           error => {
             this.toastr.error('Check the browser console to see more info.','Error!');

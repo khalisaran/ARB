@@ -42,6 +42,7 @@ array_DataTransferLimit : any[];
   ngOnInit() {
    /* if(!this.datatransferlimit.id)
     	this.mymodalSFU.open();*/
+      this.get_all_DataTransferLimit();
 
   }
 

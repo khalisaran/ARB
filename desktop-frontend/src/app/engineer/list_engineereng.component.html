@@ -4,14 +4,14 @@
         <div class="col-lg-4 col-lg-offset-2"><label class="generated-label">List Of Engineer</label>
         </div>
         </div>
-        <div class="row" style="padding-top: 79px">
+       <!--  <div class="row" style="padding-top: 79px">
         <div class="col-lg-2 col-lg-offset-2"><md-input-container class="" style="width: 100%;"><input mdInput placeholder="Input" [(ngModel)]="engineer.name"></md-input-container>
         </div>
         <div class="col-lg-1 "><button class="btn btn-primary" (click)="get_all_Engineer()" style="width: 100%;">GetAll</button>
         </div>
-        </div>
+        </div> -->
         <div class="row" style="padding-top: 63px">
-        <div class="col-lg-4 col-lg-offset-2"><ag-grid-angular #Table_1005Grid style="width: 100%; height: 138px;" class="ag-fresh" [gridOptions]="Table_1005GridOptions" [rowData]="array_Engineer"></ag-grid-angular>
+         <div class="col-lg-8 " style="width:100%;height: 300px;"><ag-grid-angular #Table_1005Grid style="width: 100%; height: 138px;" class="ag-fresh" [gridOptions]="Table_1005GridOptions" [rowData]="array_Engineer"></ag-grid-angular>
         </div>
         </div>
 
